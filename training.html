@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Training - Barkbond</title>
+    
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    >
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <!-- Navigation Bar (from main page) -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Barkbond</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="training.html">Training</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="chat.html">Chat</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navigation Bar -->
+
+    <!-- Onboarding Modal (Filter Selection) -->
+    <div class="modal fade" id="onboardingModal" tabindex="-1" aria-labelledby="onboardingModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header border-0 bg-light">
+            <h2 class="modal-title text-center w-100" id="onboardingModalLabel" style="color: var(--bistre);">
+              Let's Get to Know Your Puppy!
+            </h2>
+          </div>
+          <div class="modal-body">
+            <form id="onboardingForm" class="mx-auto" style="max-width: 400px;">
+              <div class="mb-4">
+                <label for="breedSelector" class="form-label" style="color: var(--bistre);">Select Your Puppy’s Breed</label>
+                <select id="breedSelector" class="form-select">
+                  <option value="">All Breeds</option>
+                  <option value="Labrador">Labrador</option>
+                  <option value="Beagle">Beagle</option>
+                  <option value="German Shepherd">German Shepherd</option>
+                  <option value="Poodle">Poodle</option>
+                </select>
+              </div>
+              <div class="mb-4">
+                <label for="ageSelector" class="form-label" style="color: var(--bistre);">Select Your Puppy’s Age</label>
+                <select id="ageSelector" class="form-select">
+                  <option value="">All Ages</option>
+                  <option value="8 Weeks">8 Weeks</option>
+                  <option value="3 Months">3 Months</option>
+                  <option value="6 Months">6 Months</option>
+                </select>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer border-0 bg-light">
+            <button type="button" class="btn btn-primary" id="applyFiltersBtn">Continue / Apply Filters</button>
+            <button type="button" class="btn btn-secondary" id="skipOnboardingBtn" data-bs-dismiss="modal">Skip for Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Onboarding Modal -->
+
+    <!-- Persistent Header Bar for Filters and Search -->
+    <div class="header-bar bg-light py-2 border-bottom" style="margin-top: 56px;">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="current-filters">
+          <span id="filterDisplay">All Breeds, All Ages</span>
+        </div>
+        <div class="d-flex align-items-center gap-2">
+          <input type="search" class="form-control" placeholder="Search exercises" id="exerciseSearch">
+          <button class="btn btn-outline-secondary" id="changeFiltersBtn">Change Filters</button>
+          <button class="btn btn-outline-secondary" id="resetFiltersBtn">Reset Filters</button>
+        </div>
+      </div>
+    </div>
+    <!-- End Header Bar -->
+
+    <!-- Main Content Area: Exercise Feed -->
+    <div class="container my-5 pt-3" id="exerciseFeed">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- 4 Cards for Labrador -->
+        <div class="col">
+          <div class="card h-100" data-breed="Labrador" data-age="3 Months">
+            <img src="images/exercise-sit.jpg" class="card-img-top" alt="Labrador Sit Command">
+            <div class="card-body">
+              <h5 class="card-title">Sit Command</h5>
+              <p class="card-text">A fundamental command ideal for Labradors.</p>
+              <p class="small text-muted">Tags: Basic, Reward-Based</p>
+              <a href="exercise-detail.html?id=1" class="btn btn-primary">View Exercise</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100" data-breed="Labrador" data-age="6 Months">
+            <img src="images/exercise-fetch.jpg" class="card-img-top" alt="Labrador Fetch Game">
+            <div class="card-body">
+              <h5 class="card-title">Fetch Game</h5>
+              <p class="card-text">An engaging fetch game for a playful Labrador.</p>
+              <p class="small text-muted">Tags: Fun, All Ages</p>
+              <a href="exercise-detail.html?id=2" class="btn btn-primary">View Exercise</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100" data-breed="Labrador" data-age="8 Weeks">
+            <img src="images/exercise-leash.jpg" class="card-img-top" alt="Labrador Leash Training">
+            <div class="card-body">
+              <h5 class="card-title">Leash Training</h5>
+              <p class="card-text">Calm walks begin with proper leash training for young Labradors.</p>
+              <p class="small text-muted">Tags: Leash Training, Beginner</p>
+              <a href="exercise-detail.html?id=3" class="btn btn-primary">View Exercise</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100" data-breed="Labrador" data-age="3 Months">
+            <img src="images/exercise-rollover.jpg" class="card-img-top" alt="Labrador Rollover Trick">
+            <div class="card-body">
+              <h5 class="card-title">Rollover Trick</h5>
+              <p class="card-text">A playful trick to build fun and responsiveness.</p>
+              <p class="small text-muted">Tags: Trick, Fun</p>
+              <a href="exercise-detail.html?id=4" class="btn btn-primary">View Exercise</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 4 Cards for Beagle -->
+        <div class="col">
+          <div class="card h-100" data-breed="Beagle" data-age="3 Months">
+            <img src="images/exercise-sit.jpg" class="card-img-top" alt="Beagle Sit Command">
+            <div class="card-body">
+              <h5 class="card-title">Sit Command</h5>
+              <p class="card-text">Basic command training tailored for Beagles.</p>
+              <p class="small text-muted">Tags: Basic, Reward-Based</p>
+              <a href="exercise-detail.html?id=5" class="btn btn-primary">View Exercise</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100" data-breed="Beagle" data-age="6 Months">
+            <img src="images/exercise-fetch.jpg" class="card-img-top" alt="Beagle Fetch Game">
+            <div class="card-body">
+              <h5 class="card-title">Fetch Game</h5>
+              <p class="card-text">Keep your Beagle active with a fun game of fetch.</p>
+              <p class="small text-muted">Tags: Fun, All Ages</p>
+              <a href="exercise-detail.html?id=6" class="btn btn-primary">View Exercise</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100" data-breed="Beagle" data-age="8 Weeks">
+            <img src="images/exercise-leash.jpg" class="card-img-top" alt="Beagle Leash Training">
+            <div class="card-body">
+              <h5 class="card-title">Leash Training</h5>
+              <p class="card-text">Effective leash training for a young and active Beagle.</p>
+              <p class="small text-muted">Tags: Leash Training, Beginner</p>
+              <a href="exercise-detail.html?id=7" class="btn btn-primary">View Exercise</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100" data-breed="Beagle" data-age="3 Months">
+            <img src="images/exercise-rollover.jpg" class="card-img-top" alt="Beagle Rollover Trick">
+            <div class="card-body">
+              <h5 class="card-title">Rollover Trick</h5>
+              <p class="card-text">Fun rollover exercise perfect for playful Beagles.</p>
+              <p class="small text-muted">Tags: Trick, Fun</p>
+              <a href="exercise-detail.html?id=8" class="btn btn-primary">View Exercise</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 4 Cards for German Shepherd -->
+        <div class="col">
+          <div class="card h-100" data-breed="German Shepherd" data-age="3 Months">
+            <img src="images/exercise-sit.jpg" class="card-img-top" alt="German Shepherd Sit Command">
+            <div class="card-body">
+              <h5 class="card-title">Sit Command</h5>
+              <p class="card-text">A fundamental command designed for German Shepherds.</p>
+              <p class="small text-muted">Tags: Basic, Reward-Based</p>
+              <a href="exercise-detail.html?id=9" class="btn btn-primary">View Exercise</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100" data-breed="German Shepherd" data-age="6 Months">
+            <img src="images/exercise-fetch.jpg" class="card-img-top" alt="German Shepherd Fetch Game">
+            <div class="card-body">
+              <h5 class="card-title">Fetch Game</h5>
+              <p class="card-text">An exciting fetch game tailored for German Shepherds.</p>
+              <p class="small text-muted">Tags: Fun, All Ages</p>
+              <a href="exercise-detail.html?id=10" class="btn btn-primary">View Exercise</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100" data-breed="German Shepherd" data-age="8 Weeks">
+            <img src="images/exercise-leash.jpg" class="card-img-top" alt="German Shepherd Leash Training">
+            <div class="card-body">
+              <h5 class="card-title">Leash Training</h5>
+              <p class="card-text">Learn calm walking techniques with leash training for German Shepherds.</p>
+              <p class="small text-muted">Tags: Leash Training, Beginner</p>
+              <a href="exercise-detail.html?id=11" class="btn btn-primary">View Exercise</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100" data-breed="German Shepherd" data-age="3 Months">
+            <img src="images/exercise-rollover.jpg" class="card-img-top" alt="German Shepherd Rollover Trick">
+            <div class="card-body">
+              <h5 class="card-title">Rollover Trick</h5>
+              <p class="card-text">A fun trick exercise for German Shepherds to boost their agility.</p>
+              <p class="small text-muted">Tags: Trick, Fun</p>
+              <a href="exercise-detail.html?id=12" class="btn btn-primary">View Exercise</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 4 Cards for Poodle -->
+        <div class="col">
+          <div class="card h-100" data-breed="Poodle" data-age="3 Months">
+            <img src="images/exercise-sit.jpg" class="card-img-top" alt="Poodle Sit Command">
+            <div class="card-body">
+              <h5 class="card-title">Sit Command</h5>
+              <p class="card-text">Basic command training designed for Poodles.</p>
+              <p class="small text-muted">Tags: Basic, Reward-Based</p>
+              <a href="exercise-detail.html?id=13" class="btn btn-primary">View Exercise</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100" data-breed="Poodle" data-age="6 Months">
+            <img src="images/exercise-fetch.jpg" class="card-img-top" alt="Poodle Fetch Game">
+            <div class="card-body">
+              <h5 class="card-title">Fetch Game</h5>
+              <p class="card-text">A lively fetch game perfect for active Poodles.</p>
+              <p class="small text-muted">Tags: Fun, All Ages</p>
+              <a href="exercise-detail.html?id=14" class="btn btn-primary">View Exercise</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100" data-breed="Poodle" data-age="8 Weeks">
+            <img src="images/exercise-leash.jpg" class="card-img-top" alt="Poodle Leash Training">
+            <div class="card-body">
+              <h5 class="card-title">Leash Training</h5>
+              <p class="card-text">Techniques for calm walks tailored for young Poodles.</p>
+              <p class="small text-muted">Tags: Leash Training, Beginner</p>
+              <a href="exercise-detail.html?id=15" class="btn btn-primary">View Exercise</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100" data-breed="Poodle" data-age="3 Months">
+            <img src="images/exercise-rollover.jpg" class="card-img-top" alt="Poodle Rollover Trick">
+            <div class="card-body">
+              <h5 class="card-title">Rollover Trick</h5>
+              <p class="card-text">A fun and playful trick exercise for Poodles.</p>
+              <p class="small text-muted">Tags: Trick, Fun</p>
+              <a href="exercise-detail.html?id=16" class="btn btn-primary">View Exercise</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Main Content Area -->
+
+    <!-- Footer Section -->
+    <div class="footer">
+      <div class="container text-center">
+        <p>Contact us: <a href="mailto:info@barkbond.com">info@barkbond.com</a></p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com" target="_blank">Instagram</a>
+          <a href="https://www.facebook.com" target="_blank">Facebook</a>
+        </div>
+        <p class="mt-3">&copy; 2025 Barkbond</p>
+      </div>
+    </div>
+    <!-- End Footer -->
+
+    <!-- Bootstrap JavaScript Bundle (optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+    
+    <!-- Custom JavaScript for Filter and Search Functionality -->
+    <script>
+      // Function to update visibility of exercise cards based on breed, age and search term.
+      function updateCardVisibility() {
+        var breedFilter = document.getElementById('breedSelector').value;
+        var ageFilter = document.getElementById('ageSelector').value;
+        var searchTerm = document.getElementById('exerciseSearch').value.toLowerCase();
+        var cards = document.querySelectorAll('#exerciseFeed .card');
+        
+        cards.forEach(function(card) {
+          var cardBreed = card.getAttribute('data-breed');
+          var cardAge = card.getAttribute('data-age');
+          var cardTitle = card.querySelector('.card-title').innerText.toLowerCase();
+          
+          var breedMatches = (breedFilter === "" || breedFilter.toLowerCase() === cardBreed.toLowerCase());
+          var ageMatches = (ageFilter === "" || ageFilter.toLowerCase() === cardAge.toLowerCase());
+          var searchMatches = (searchTerm === "" || cardTitle.indexOf(searchTerm) > -1);
+          
+          if(breedMatches && ageMatches && searchMatches) {
+            card.parentElement.style.display = "";
+          } else {
+            card.parentElement.style.display = "none";
+          }
+        });
+      }
+    
+      // Function to parse query parameters from the URL.
+      function getQueryParam(param) {
+        let params = new URLSearchParams(window.location.search);
+        return params.get(param);
+      }
+    
+      document.addEventListener("DOMContentLoaded", function() {
+        // Check if there's a query parameter for 'dog'
+        var urlDog = getQueryParam('dog');
+        var urlAge = getQueryParam('age');
+        // If found, set the filters accordingly and update the filter display.
+        if(urlDog) {
+          document.getElementById('breedSelector').value = urlDog;
+          // If URL doesn't have age, default to "All"
+          document.getElementById('ageSelector').value = urlAge || "";
+          document.getElementById('filterDisplay').innerText = urlDog + ", " + (urlAge || "All Ages");
+          updateCardVisibility();
+        }
+    
+        // Show onboarding modal on first visit.
+        if (!localStorage.getItem('visitedTraining')) {
+          var onboardingModalEl = document.getElementById('onboardingModal');
+          var onboardingModal = new bootstrap.Modal(onboardingModalEl);
+          onboardingModal.show();
+          localStorage.setItem('visitedTraining', 'true');
+        }
+    
+        // Apply filters from modal.
+        document.getElementById('applyFiltersBtn').addEventListener('click', function() {
+          var breed = document.getElementById('breedSelector').value || "All Breeds";
+          var age   = document.getElementById('ageSelector').value || "All Ages";
+          document.getElementById('filterDisplay').innerText = breed + ", " + age;
+          var modal = bootstrap.Modal.getInstance(document.getElementById('onboardingModal'));
+          modal.hide();
+          updateCardVisibility();
+        });
+    
+        // Open onboarding modal when Change Filters is clicked.
+        document.getElementById('changeFiltersBtn').addEventListener('click', function() {
+          var modal = new bootstrap.Modal(document.getElementById('onboardingModal'));
+          modal.show();
+        });
+    
+        // Reset filters without reopening modal.
+        document.getElementById('resetFiltersBtn').addEventListener('click', function() {
+          document.getElementById('filterDisplay').innerText = "All Breeds, All Ages";
+          document.getElementById('breedSelector').value = "";
+          document.getElementById('ageSelector').value = "";
+          updateCardVisibility();
+        });
+    
+        // Search functionality.
+        document.getElementById('exerciseSearch').addEventListener('keyup', function() {
+          updateCardVisibility();
+        });
+      });
+    </script>
+  </body>
+</html>
