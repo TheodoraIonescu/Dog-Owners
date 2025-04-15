@@ -1,44 +1,151 @@
-/* Importing a Google Font */
-
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap');
-
-/* Changing the main font and background colour */
-
-body {
-	font-family: Raleway, sans-serif;
-	background-color: #fffcf8;
-}
-
-/* Changing the background colour for the header */
-
-header {
-	background-color: #000060;
-}
-
-/* Changing the background color for the navigation bar */
-
-.navbar {
-	background-color: #fff0e0;
-}
-
-/* Effect on social media buttons */
-
-footer a:hover {
-	opacity: .5;
-}
-
-/* Corporate navbar */
-
-#navbar-corporate a.active {
-	color: #800000;
+/* Color Variables */
+:root {
+	--columbia-blue: #D2E8FF;
+	--flame: #EA672D;
+	--bistre: #5D372A;
+	--cal-poly-green: #26422A;
+	--hero-bg: #FDEDC1;
+	--body-text: #333333;
+  }
+  
+  /* Global Styles */
+  body {
+	background-color: var(--hero-bg); /* apply to whole site */
+	color: var(--body-text);
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+  }
+  
+  /* Navigation Styles */
+  .nav-container {
+	background: var(--columbia-blue);
+	z-index: 1000;
+	position: relative;
+	padding: 0.5rem 1rem;
+  }
+  .nav-inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }
+  .logo {
 	font-weight: bold;
-}
+	color: var(--bistre);
+	font-size: 1.5rem;
+  }
+  .nav-links {
+	display: flex;
+	gap: 1rem;
+  }
+  .nav-link {
+	color: var(--bistre);
+	text-decoration: none;
+	font-weight: bold;
+  }
+  .nav-link:hover {
+	color: var(--flame);
+  }
+  
+  /* Hero Section */
+  .hero {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+  }
+  .hero-image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+  }
+  .hero-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	color: var(--hero-bg);
+	text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+  }
+  .hero-text h1 {
+	font-size: 4rem;
+	margin: 0;
+  }
+  
+  /* Section Styling */
+  .section {
+	padding: 4rem 0;
+  }
+  .section-title {
+	color: var(--bistre);
+	margin-bottom: 2rem;
+  }
+  
+  /* Our Values Section */
+  .values-section .card-title {
+	font-size: 1.25rem;
+	color: var(--flame);
+  }
+  
+  .values-section .card-text {
+	color: var(--body-text);
+  }
+  
+  .value-card {
+	background-color: #fff;
+	border: 1px solid #ddd;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+	transition: transform 0.2s ease;
+  }
+  
+  .value-card:hover {
+	transform: translateY(-5px);
+  }
+  
 
-/* Hero Section shadow */
-
-.white-shadow {
-	text-shadow: -.01em -.01em .01em white,
-		.02em .02em .02em white,
-		0 0 .2em white,
-		0 0 .5em white;
-}
+  /* Footer Styles */
+  .footer {
+	background: var(--columbia-blue);
+	padding: 2rem 0;
+	text-align: center;
+  }
+  .footer a {
+	color: var(--flame);
+	text-decoration: none;
+	margin: 0 5px;
+  }
+  .footer a:hover {
+	text-decoration: underline;
+  }
+  .social-icons a {
+	margin: 0 10px;
+	font-size: 1.5rem;
+  }
+  
+  /* Cards and Buttons */
+  .card {
+	border: none;
+	box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  .card-title {
+	color: var(--flame);
+  }
+  .btn-primary {
+	background-color: var(--flame);
+	border-color: var(--flame);
+  }
+  .btn-primary:hover {
+	background-color: var(--bistre);
+	border-color: var(--bistre);
+  }
+  .btn-success {
+	background-color: var(--cal-poly-green);
+	border-color: var(--cal-poly-green);
+  }
+  .btn-success:hover {
+	background-color: var(--bistre);
+	border-color: var(--bistre);
+  }
+  
