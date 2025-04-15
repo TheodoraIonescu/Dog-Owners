@@ -17,16 +17,29 @@
   <body>
 
     <!-- Navigation Bar Section -->
-    <div class="nav-container">
-      <div class="nav-inner">
-        <div class="logo">Barkbond</div>
-        <div class="nav-links">
-          <a href="index.html" class="nav-link">Home</a>
-          <a href="training.html" class="nav-link">Training</a>
-          <a href="chat.html" class="nav-link">Chat</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Barkbond</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="training.html">Training</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="chat.html">Chat</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
+    </nav>
     <!-- End Navigation -->
 
     <!-- Hero Section -->
@@ -43,36 +56,36 @@
       <div class="container">
         <h2 class="section-title text-center">Train Your Puppy</h2>
         <div class="row row-cols-1 row-cols-md-3 g-4">
-          <!-- Card 1 -->
+          <!-- Card 1: Labrador -->
           <div class="col">
             <div class="card h-100">
-              <img src="images/dog1.jpg" class="card-img-top" alt="Dog Type 1">
+              <img src="images/labrador_exercise.jpg" class="card-img-top" alt="Labrador Sit Command">
               <div class="card-body">
-                <h5 class="card-title">Puppy Play</h5>
-                <p class="card-text">Teach your dog a fun trick.</p>
-                <a href="training.html?dog=type1&action=play" class="btn btn-primary">Train Now</a>
+                <h5 class="card-title">Labrador Sit Command</h5>
+                <p class="card-text">Train your Labrador with this essential sit command exercise to build a strong foundation.</p>
+                <a href="training.html?dog=Labrador&age=All" class="btn btn-primary">View More Exercises</a>
               </div>
             </div>
           </div>
-          <!-- Card 2 -->
+          <!-- Card 2: Beagle -->
           <div class="col">
             <div class="card h-100">
-              <img src="images/dog2.jpg" class="card-img-top" alt="Dog Type 2">
+              <img src="images/beagle_exercise.jpg" class="card-img-top" alt="Beagle Fetch Game">
               <div class="card-body">
-                <h5 class="card-title">Sit Command</h5>
-                <p class="card-text">Master the basics of obedience.</p>
-                <a href="training.html?dog=type2&action=sit" class="btn btn-primary">Train Now</a>
+                <h5 class="card-title">Beagle Fetch Game</h5>
+                <p class="card-text">Keep your Beagle active with a fetch game that develops agility and recall.</p>
+                <a href="training.html?dog=Beagle&age=All" class="btn btn-primary">View More Exercises</a>
               </div>
             </div>
           </div>
-          <!-- Card 3 -->
+          <!-- Card 3: German Shepherd -->
           <div class="col">
             <div class="card h-100">
-              <img src="images/dog3.jpg" class="card-img-top" alt="Dog Type 3">
+              <img src="images/germanshepherd_exercise.jpg" class="card-img-top" alt="German Shepherd Leash Training">
               <div class="card-body">
-                <h5 class="card-title">Heel Walk</h5>
-                <p class="card-text">Learn how to walk in sync.</p>
-                <a href="training.html?dog=type3&action=heel" class="btn btn-primary">Train Now</a>
+                <h5 class="card-title">German Shepherd Leash Training</h5>
+                <p class="card-text">Master controlled walks with this leash training exercise for German Shepherds.</p>
+                <a href="training.html?dog=German%20Shepherd&age=All" class="btn btn-primary">View More Exercises</a>
               </div>
             </div>
           </div>
@@ -114,7 +127,6 @@
       </div>
     </div>
     <!-- End Our Values Section -->
-
 
     <!-- Chat Section -->
     <div class="section chat-section bg-light">
