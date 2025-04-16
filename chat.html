@@ -73,15 +73,24 @@
     const channels = document.querySelectorAll('.channel');
 
     const staticMessages = {
-      'general': [
-        { sender: 'admin', text: 'Welcome to the #general chat!' },
-        { sender: 'admin', text: 'Feel free to ask anything dog-related 🐾' }
-      ],
-      'training-tips': [
-        { sender: 'trainerBot', text: 'Training Tip: Use positive reinforcement!' },
-        { sender: 'trainerBot', text: 'Training Tip: Keep sessions short and fun.' }
-      ]
-    };
+  'general': [
+    { sender: 'admin', text: 'Welcome to the #general chat!' },
+    { sender: 'admin', text: 'Feel free to ask anything dog-related 🐾' },
+    { sender: 'FidoFan', text: 'Anyone else struggling with leash training?' },
+    { sender: 'HappyPaws', text: 'I just adopted a pup! So excited to learn and share tips!' },
+    { sender: 'DogLover99', text: 'I love the community here—everyone is so friendly.' },
+    { sender: 'TailWagger', text: 'Looking for recommendations on good dog parks!' }
+  ],
+  'training-tips': [
+    { sender: 'trainerBot', text: 'Training Tip: Use positive reinforcement!' },
+    { sender: 'trainerBot', text: 'Training Tip: Keep sessions short and fun.' },
+    { sender: 'PupCoach', text: 'Remember, consistency is key in training your puppy.' },
+    { sender: 'K9Expert', text: 'Mixing up treats can help keep your pup engaged.' },
+    { sender: 'GoodTrainer', text: 'Patience and repetition yield the best results!' },
+    { sender: 'DogSensei', text: 'Start with simple commands and gradually build complexity.' }
+  ]
+};
+
 
     let currentChannel = 'general';
     let userMessages = {
