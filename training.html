@@ -16,10 +16,12 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <!-- Navigation Bar (from main page) -->
+    <!-- Navigation Bar Section -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="index.html">Barkbond</a>
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.png" alt="Barkbond Logo" style="height: 50px;">
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNav" aria-controls="navbarNav"
                 aria-expanded="false" aria-label="Toggle navigation">
@@ -36,11 +38,22 @@
             <li class="nav-item">
               <a class="nav-link" href="chat.html">Chat</a>
             </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Others
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="team.html">Meet the Team</a></li>
+                <li><a class="dropdown-item" href="corporate.html">Corporate</a></li>
+              </ul>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
-    <!-- End Navigation Bar -->
+    <!-- End Navigation -->
+
 
     <!-- Onboarding Modal (Filter Selection) -->
     <div class="modal fade" id="onboardingModal" tabindex="-1" aria-labelledby="onboardingModalLabel" aria-hidden="true">
@@ -84,7 +97,7 @@
     <!-- End Onboarding Modal -->
 
     <!-- Persistent Header Bar for Filters and Search -->
-    <div class="header-bar bg-light py-2 border-bottom" style="margin-top: 56px;">
+    <div class="header-bar bg-light py-2 border-bottom" style="margin-top: 70px;">
       <div class="container d-flex justify-content-between align-items-center">
         <div class="current-filters">
           <span id="filterDisplay">All Breeds, All Ages</span>
