@@ -1,8 +1,8 @@
 /* 1. Import Candal for headings */
 @import url('https://fonts.googleapis.com/css2?family=Candal&display=swap');
 
-/* 2. Load Lazy Dog for body text */
-@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+/* Quicksand */
+@import url('https://fonts.googleapis.com/css2?family=Candal&family=Quicksand&display=swap');
 
 
 /* Color Variables */
@@ -19,7 +19,7 @@
 body {
   background-color: var(--hero-bg);
   color: var(--body-text);
-  font-family: 'Gloria Hallelujah', sans-serif;    /* use Lazy Dog for general text */
+  font-family: 'Quicksand', sans-serif; /* More readable body font */
   margin: 0;
   padding: 0;
 }
@@ -281,9 +281,15 @@ body {
 }
 .staff-image {
   position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Square aspect ratio, or use e.g. 4 / 3 for landscape */
+  overflow: hidden;
+  border-radius: 8px; /* Optional: keep this for rounded corners */
 }
 .staff-image img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;  /* This ensures the image fills the box while preserving aspect ratio */
   display: block;
 }
 .staff-overlay {
