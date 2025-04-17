@@ -22,7 +22,7 @@
   </head>
   <body data-bs-spy="scroll" data-bs-target="#navbar-corporate" data-bs-smooth-scroll="true">
 
-    <!-- Navigation bar, adapted from https://getbootstrap.com/docs/5.1/components/navbar/ -->
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container">
         <a class="navbar-brand" href="index.html">
@@ -58,17 +58,23 @@
         </div>
       </div>
     </nav>
-    <!-- End of navigation bar -->
-    <header class="py-2 py-md-4 py-lg-5 text-center container-fluid bg-gradient text-light">
+
+    <div style="margin-bottom: 50px;"></div>
+
+    <header class="py-2 py-md-4 py-lg-5 text-center container-fluid bg-gradient text-dark">
       <h1 class="fw-light">Corporate information</h1>
     </header>
-    <br>
+
     <main class="container-fluid container-xl">
       <div class="row">
         <div class="col-sm-4 col-md-3 col-lg-2 py-4">
           <nav id="navbar-corporate" class="nav sticky-sm-top flex-row flex-sm-column lh-1 justify-content-sm-between">
             <a class="nav-link p-0 mb-sm-3 fs-5 me-2 me-sm-0 text-decoration-none" href="#general">General</a>
             <a class="nav-link p-0 mb-sm-3 fs-5 me-2 me-sm-0 text-decoration-none" href="#content">Content</a>
+			                <a class="nav-link ms-3 p-0 mb-2" href="#brand-vision">Brand Vision</a>
+			  				<a class="nav-link ms-3 p-0 mb-2" href="#brand-name">Brand Name</a>
+			  				<a class="nav-link ms-3 p-0 mb-2" href="#brand-logo">Brand Logo</a>
+			  			    <a class="nav-link ms-3 p-0 mb-2" href="#product-description">Product Description</a>
             <a class="nav-link p-0 mb-sm-2 fs-5 me-2 me-sm-0 text-decoration-none" href="#production">Production</a>
             <nav class="nav d-none d-sm-flex flex-column mb-2">
               <a class="nav-link ms-3 p-0 mb-2" href="#production-1">Design Elements</a>
@@ -93,18 +99,23 @@
         <div class="col-sm-8 col-md-9 col-lg-10 py-sm-4">
 
           <!-- Start General -->
-          <h2 id="general">General Information</h2>
-          <p>
-            This branded website is publicly available at
-            <a href="https://buas-media-interactive.github.io/">buas-media-interactive.github.io/my-website</a>
-            <em>(please change text <strong>and</strong> hyperlink destination)</em>
-          </p>
-          <p>
-            This website was created by&hellip; <em>(only students listed below will be graded!)</em>
-          </p>
+          <h2 id="general"><strong>General Information</strong></h2>
+<p>
+        This branded website is publicly available at
+        <a href="https://theodoraionescu.github.io/Dog-Owners/training.html">https://theodoraionescu.github.io/Dog-Owners/training.html</a>
+        <em></em>
+        </p>
+          <h5>
+            This website was created by:
+          </h5>
           <ol>
-            <li>Student (ID: 000000)</li>
-            <li>Student (ID: 000000)</li>
+            <li>Theodora Ionescu&nbsp; (ID: 230974)</li>
+            <li>Edia Vaculíková&nbsp; &nbsp; &nbsp;(ID: 247290)</li>
+	        <li>Floor Dillen&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (ID: 232904)</li>
+			<li>Veronika Bozukova (ID: 231881)</li>
+			<li>Mihnea Velea&nbsp; &nbsp; &nbsp; &nbsp;(ID: 231472)</li>
+			           
+
           </ol>
           <!-- End General -->
 
@@ -124,95 +135,121 @@
             <tbody>
               <tr>
                 <th scope="row">1.</th>
-                <td>000000</td>
-                <td>Value</td>
+                <td>230974</td>
+                <td>Value:&nbsp;Parenting with a Woof</td>
                 <td>
-                  <a href="index.html">Content title</a>
+                  <a href="#management">Management</a>
                 </td>
               </tr>
               <tr>
                 <th scope="row">2.</th>
-                <td></td>
-                <td></td>
+                <td>247290</td>
+                <td>Value: Bark effortlessly</td>
                 <td>
-                  <a href="#"></a>
+                  <a href="#marketing">Marketing</a>
                 </td>
               </tr>
               <tr>
                 <th scope="row">3.</th>
-                <td></td>
-                <td></td>
+                <td>232904</td>
+                <td>Value: Pawsitively responsible</td>
                 <td>
-                  <a href="#"></a>
+                  <a href="#production">Production</a>
                 </td>
               </tr>
               <tr>
                 <th scope="row">4.</th>
-                <td></td>
-                <td></td>
+                <td>231881</td>
+                <td>Value: Bark in harmony</td>
                 <td>
-                  <a href="#"></a>
+                  <a href="#content">Content</a>
+                </td>
+              </tr>
+				 <tr>
+                <th scope="row">5.</th>
+                <td>231472</td>
+                <td>Value: Sharing a bone</td>
+                <td>
+                  <a href="index.html">Website</a>
                 </td>
               </tr>
             </tbody>
           </table>
-          
-          <!-- End Content, start Production -->
+          <h4 id="brand-vision">Brand Vision</h4>
+	      <p>Just like peanut butter and jelly, humans and dogs may be very different, but we are always better together. At BarkBond, we dream of a world where humans finally crack the code of the secret dog talk – because let’s face it, dogs have been trying to tell us things for forever! By turning all tail wags and woofs into real conversations, we create a world where every bark is heard, every paw is received with open arms, and the bond between humans and dogs is stronger than a game of tug-of-war.&nbsp;</p>
+		  <h4 id="brand-name">Brand Name</h4>
+	      <p>Why BarkBond? Because that’s what we’re all about — the bark (your dog’s voice) and the bond (your connection).&nbsp;</p>
+	      <p>We wanted a name that’s simple, playful, and says exactly what we stand for to not create any confusion: helping humans and their dogs understand each other better, one wag and woof at a time.&nbsp;</p>
+	      <p>It’s about turning "sit" into something fun, "stay" into trust, and every tail wag into a shared win.&nbsp;</p>
+		<h4 id="brand-logo">Brand Logo</h4>
+	      <p>Say hello to our little mascot! 
+Our dog logo is made from clean, simple lines, designed to be instantly recognizable (even on a tiny profile pic). Just a few strokes — and boom, you’ve got a friendly pup giving you the “ready to learn!” face.  &nbsp;</p>
+	      <p>We didn’t overcomplicate it because, well... neither should training be. 
+It’s approachable, playful, and totally BarkBond — the kind of logo that wags its tail at you. </p>
+	      <p>We love using the dog icon solo when we want to keep it minimal (like on socials), and the full BARK BOND text when we wanna speak loud and clear. 
+Both elements work on their own or together — like a good human-dog duo.  &nbsp;</p>
+			<p>And yes, we played with all the fun colour combos from our palette to keep it looking fresh, warm, and trustworthy — just like us. </p>
+		  <h4 id="product-description">Product Description</h4>
+	      <p>Welcome to <strong>Barkbond</strong>, where training your dog feels less like a chore and more like a fun adventure! We’re all about helping you build an unbreakable bond with your four-legged bestie through easy, effective training and a better understanding of dog behavior. Whether you're dealing with zoomies, stubborn leash pulling, or a pup who thinks your couch is their personal throne—we got you! Here, you'll find expert-backed training tips, step-by-step guides, and cool insights into what’s actually going on inside your dog’s head (spoiler: it’s not just food). From mastering the basics to teaching next-level tricks, we make training simple, stress-free, and even fun! </p>
+		  <h4 id="persona">Brand Target Persona</h4>
+		  <img alt="Persona 1" class="img-thumbnail" src="images/Persona1.png">
+		  <img alt="Persona 2" class="img-thumbnail" src="images/Persona2.png">
+	      <!-- End Content, start Production -->
           
           <h2 id="production" class="mt-5">Production</h2>
           <h4 id="production-1" class="mt-2">Design Elements</h4>
           <p>Please provide a list of design elements alongside their justifications:</p>
           <ul>
             <li>
-              A colour scheme (with HTML colour codes, which must be consistent with your final website)
-              <em>&mdash; see the example below from the BUas brand book:</em>
-              <ul class="list-unstyled">
-                <li>
-                  <span class="border border-secondary rounded px-2 me-1" style="background-color: #EE7622;"></span>
-                  #EE7622
-                  <em>The orange colour refers to the Dutch identity and the city of Breda (Oranjestad). Orange stands for&hellip;</em>
-                </li>
-                <li>
-                  <span class="border border-secondary rounded px-2 me-1" style="background-color: #00406B;"></span>
-                  #00406B
-                  <em>Dark blue signifies&hellip;</em>
-                </li>
-              </ul>
+              <em>We wanted a color palette which was bright and cheery, with a few contrasting colors where needed.&nbsp; Most of all, the color palette had to illustrate a light-hearted tone and have a cheerful effect on visitors. as well as eminate trust and harmony. As such, we decided to go with pastel colors in general, with two darker colors to create a pleasant contrast and avoid overloading the user with bright colors. This lead us to these choices:&nbsp; &nbsp; &nbsp;<br>
+              <br>
+              </em>
+<ul class="list-unstyled">
+            <li> <span class="border border-secondary rounded px-2 me-1" style="background-color: #FBEDC0;"> </span> #FBEDC0 <em>The warm and cheerful color is welcoming, as well as it standing for optimism and <strong>paw</strong>sitivity!</em> </li>
+            <li>&nbsp;</li>
+<li>&nbsp;</li>
+<li> <span class="border border-secondary rounded px-2 me-1" style="background-color: #D2E8FF;"> </span> #D2E8FF <em>Light blue signifies calm in the chaos, offering structure without being too strict or harsh.</em> </li>
+<li>&nbsp;</li>
+<li>&nbsp;</li>
+            <li> <span class="border border-secondary rounded px-2 me-1" style="background-color: #EA672D;"> </span> #EA672D <em>The orange gives a sensation of energy and motivation, adding a dose of <strong>paw</strong>-sonality to our brand - playful, bold and ready to train!</em> </li>
+            <li>&nbsp;</li>
+            <li> <span class="border border-secondary rounded px-2 me-1" style="background-color: #26422A;"> </span> #26422A <em>A forest walk visualized in a single color - full of harmony, good vibes and reflecting growth in both relationships and training.</em> </li>
+            <li>&nbsp;</li>
+<li> <span class="border border-secondary rounded px-2 me-1" style="background-color: #5D372A;"> </span> #5D372A <em>A loyal companion to the palette, displaying sensations of reliability and loyalty, the nurturing tone of the brand.</em> </li>
+			<li>&nbsp;</li>
+			<li>&nbsp;</li>
+</ul>
             </li>
-            <li>Font choices</li>
-            <li>User interface patterns (e.g. grids, carousels, menu organizations etc.)</li>
-            <li>The structure of the <strong>navigation and content</strong> (e.g. how content units are distributed across pages)</li>
-            <li>All these elements must be justified by referring to the theory <strong>and/or vocabulary</strong> of design</li>
+            <li>Font choices - Lazy dog is the main font, chosen for its casual style and friendly appearance, while Candal has been chosen for most titles and headings as it has a more easily readible appearance, as well as a clear and comanding look to contrast with Lazy Dog.&nbsp;</li>
+            <li>For the clarity of the website's intended target audience, the home page features the brand name and an image of a dog as soon as it opens up. Overall, the page was kept as minimalistic as possible in order to make it easier for our target audience to utilize, as many of them are less tech-savvy than our generation. The menu's are kept simple and clear, with most buttons for navigation located at the top of the page in common with other web pages to give BarkBond's website a familiar look and feel. The filter sistem for dog breeds and age is a drop-down menu to allow our visitors to have an overview of all currently available information at the time of visiting, instead of having to search around for a page which might not exist.&nbsp;</li>
+
             <li>Please relate these elements to other units, for example:
               <ul>
-                <li>How does website design fit the <strong>values and personality of the brand</strong>?</li>
-                <li>How does website design fit the <strong>marketing and communication strategy</strong>?</li>
-                <li>How does website design help showcase the <strong>unique value proposal of the product</strong>?</li>
+                <li>The minimalistic look also fits in with the brand's minimalistic style, with the logo designed out of simple line-art which gives a light-hearted and relaxed tone to the brand.&nbsp;</li>
+                <li>The light and lively feel of the website also fits with our communication strategy on social media, which has been filled with trendy memes and joke-like posts, filled with puns and light humo in order to fit-in with our overall theme and vision.&nbsp;</li>
+                <li>The chat section is the most unique feature of the website when compared to competitors, and the chat feature is part of the main selection of menu's, attracting more attention to the feature.&nbsp; </li>
               </ul>
             </li>
           </ul>
           <h4 id="production-2" class="mt-2">Credits</h4>
-          <p>Please provide links and/or credits for third-party elements including:</p>
+          <p></p>
           <ul>
-            <li>HTML <strong>templates</strong> if these are different from this one (<a href="https://github.com/buas-media-interactive/prj4-group-template" target="_blank">buas-media-interactive/prj4-group-template</a>)</li>
-            <li>The source code for <strong>UX patterns</strong> other than the ones provided by the “Bootstrap” library (see <a href="https://getbootstrap.com/docs/5.2/" target="_blank">getbootstrap.com/docs</a> for a list of such patterns)</li>
-            <li><strong>Images</strong> that were not produced by students themselves, including when crediting is not mandatory (in other words, we ask you to credit Unsplash images)</li>
+            <li>All images used were sourced from <a href="https://www.pexels.com/">https://www.pexels.com/</a> </li>
           </ul>
           <h4 id="production-3" class="mt-2">Testing Report</h4>
-          <p>Please write about&hellip;</p>
+          <p>&nbsp;</p>
           <ul>
-            <li>Your testing <strong>goals</strong> &ndash; in other words, what you are trying to learn about your website?</li>
-            <li>Your testing <strong>methods</strong>, which includes information about:
+            <li>During our testing, we focused on the website's ease of use and user-friendliness, to determine if our target audience would be able to easily identify and utilise the website's features. Another factor we focused on during testing was how clearly the website communicates the mission and vision statements, and the overall feel given to website visitors by the aesthetic and communication styles.&nbsp; &nbsp;</li>
+            <li>Testing details:
               <ul>
-                <li>The test&rsquo;s <strong>participants</strong> (number, match with target audience, etc.)
-                <li>The test&rsquo;s <strong>setting</strong> (which material is used, is it done remotely, on campus, at home, etc.)
-                <li>The test&rsquo;s <strong>protocol</strong> (what instructions are given, how it is recorded, etc.)
+                <li>As of writing this, we have 3 testers, of which 1 is directly within our target audience and 2 are dog lovers, however are younger than our target audience.&nbsp; &nbsp;&nbsp;</li>
+                <li>Two of the tests were done in person while the third one was done remotely online. Recording was either done by phone or digitally, but the participants were tested in familiar areas, either at BUas or at their home remotely online in order to maximize the natural feel of visiting the website.&nbsp;</li>
+                <li>The participants were asked to look around the website, occasionally locate specific features and provide feedback or potential points of improvement.&nbsp; </li>
               </ul>
             </li>
             <li>Your testing <strong>results</strong>, which includes information about:
               <ul>
-                <li>Positive and negative aspects of the UI/UX that have been identified, ranked by importance.</li>
-                <li>Improvements that have been implemented on the final website (or that would be implemented if doing so would be too complex)</li>
+                <li>One negative aspect identified by two candidates was the fact that the UI menu buttons at the top of the home page do not stand out enough to make it clear that they are a feature immediately, but it was added by participants that it is not a significant hinderence, just the only point of improvement they could identify.&nbsp;</li>
               </ul>
             </li>
           </ul>
@@ -221,31 +258,54 @@
 
           <h2 id="marketing" class="mt-5">Marketing</h2>
           <h4 id="marketing-1" class="mt-2">Context of campaign and promotional activities</h4>
-          <p>Explain the context of the campaign is (What the campaign is about, what the message is, which promotional activities were executed). In addition, present the objectives as mentioned in the Communication & Media Plan.</p>
-          <p>Explain and justify the chosen channels/platforms used and show there is a solid connection to the objectives established in the Communication & Media Plan.</p>
+          <p>Our marketing campaign is represented by posting consistently for one month on both Instagram and Facebook, the platforms that are most used by our target audience. It is going to last one month, until April 11th, considering that we have to analyze our progress in the end. During the campaign, we aim to build an online community amongst dog owners, in order to influence them to visit our website, BarkBond. The most strategic choice to bring website traffic is to connect beforehand with people, through engaging posts, building this way a base, and gaining potential customers. Furthermore, through this approach, we create buzz, which means building excitement through consumers’ interactions. For promotional activities, since we won’t allocate any budget for promotion, we will stick with content marketing, namely user-generated content and trends. We will create personalized content, using polls and personalized content, with the intention of engaging with people and catching their attention. Speaking about trends, we try to use as many valuable hashtags as possible, while posting relatable content, to get more viewers.</p>
+		  <p><strong>Reach Objective: </strong>By January 31st , we want to have reached 10.000 people on Instagram and 500 on Facebook, by keeping posting informational content as well as shorts and carousel posts. We will measure this objective through Instagram and Facebook metrics, that provide a clear and concise professional dashboard.  </p>
+
           <h4 id="marketing-2" class="mt-4">Learning Points</h4>
-          <p>Identify and justify your learning point (based on the Communication & Media Plan). What did you learn during the duration of the project concerning the campaign? What worked and what didn’t? What went as expected and what didn’t? What would you do differently? Reflect on the past work and describe what you learned.</p>
+			<p><strong>What worked well:</strong></p>
+          <ul>
+            <li>Posting in the afternoon, at different times than the research states, for a better reach</li>
+            <li>Using various hashtags related to our topic to increase visibility, target specific audiences, build brand awareness and improve searchability  
+            </li>
+            <li>Posting engaging stories people can interact with, to build a community, track engagement and encourage participation 
+            </li>
+			<li>Posting informative posts to increase curiosity and engagement, encourage sharing and connect to larger conversations  
+            </li>
+			<li>Posting entertaining reels to boost shareability, attract users, join trends, create interaction and connect with humor enthusiasts   
+            </li>
+          </ul>
+		  <p><strong>What didn't work well:</strong></p>
+          <ul>
+            <li>4 posts on Facebook are missing and 6 are posted late, not according to the content calendar. We tried as much as possible to stick to the content calendar, but our schedules were so busy that we couldn't align with each other. It was definitely our mistake, but we tried at least in the last week to post everything on time.  </li>
+            <li>Posting in the morning because millennials don’t spend much time on socials during that time   
+            </li>
+            <li>Posting inconsistently on Facebook, since it leads to less visibility  
+            </li>
+			<li>Not prioritizing stories, because they weren’t our main focus even though they worked well before and they would potentially bring us more viewers 
+            </li>
+			<li>Not prioritizing Facebook platform, because if we came up with a different strategy such as promoting it in different dog-groups, we would have gained for sure a few more followers 
+            </li>
+          </ul>
           <h4 id="marketing-3" class="mt-4">Future Planning</h4>
-          <p>Reflection on what has been done and describe in detail what you would do if the project would continue.</p>
-          <p>Describe in detail your future recommendations if the campaign would be continued.</p>
-          <p>Detail and describe clearly the process of what your would do differently based on you experience on this project related to the marketing assignment.</p>
+          <p>For the upcoming weeks, we aim to dive even deeper into our insights, see what worked better and post similar content in order to achieve our goals. To do that, we want to plan meetings where we can analyze the reach and the engagement of each post, and eventually do more research about our audience, millennials and their online behavior. Since Facebook was the platform with the least interactions, we aim to focus more on it, first by promoting it on our Instagram page, and later, on Facebook groups. To avoid our content getting banned, we want to apply a strategic promotion campaign, without straight forward CTA, such as “Follow our page for more information”. As far as we are concerned, obvious promotional content on social media platforms is constantly getting either deleted or shadow-banned, and we aim to think outside the box to attract followers. If we were to consider a budget, we would potentially dive into Facebook ads, and turn our most viral content into an ad, that would be displayed specifically to our target audience, in the exact same niche we are going to. Additionally, we aim to partner with different brands that sell products exclusively for dogs. This way, we would gain brand awareness, credibility and reach. </p>
+          <p>Our overall strategy would slightly change, we would still stick to the look and feel we set, since it perfectly matches with our brand, but we would focus more on the training tips. For other promotional strategies, we plan to create exclusive content for active followers, content that can be seen if they subscribe to our Instagram page. Speaking about benefits, they would have one-to-one sessions with trainers, where they can discuss even further their concerns regarding training. Not only do they get special sessions, but they also benefit from diverse discounts from the brands we are going to partner with.  Furthermore, we would like to create a community among our subscribers, where they can chat and bond with each other. Until now, we noticed that there are some “peak” periods of time, when our content is boosted. We have noticed that it depends on week to week so we cannot dive into it right from the first week of posting. This will be researched even further in the future. </p>
+          <p>Additionally, we want to set new specific goals until January 31st 2025, since our campaign will be running for a few more months.  </p>
           <h4 id="marketing-4" class="mt-4">Professionalism</h4>
           <p>Present and organize below all social media/online activities of the campaign. Context and material are according to the brand style, image, and vision. Images on the site are of high-quality, readable, and properly designed.</p>
+		  <p><a href="https://edubuas-my.sharepoint.com/:w:/g/personal/231472_buas_nl/ET2Bm2f2BghKrBFYoyRBO7wBhvwqLOwVrQrk494jFULM0g?e=SlKPzS">Link to Marketing plan documentation</a></p>
           <ul class="list-unstyled d-flex flex-wrap justify-content-center align-items-center">
             <li class="m-2">
-              <a href="#"><!-- Please make a link to your socials instead -->
-                <img alt="Image Placeholder" class="img-thumbnail" src="images/social-media-placeholder.jpg">
+              <a href="https://www.instagram.com/bark.bond/"><!-- Please make a link to your socials instead -->
+                <img alt="Instagram Logo" class="img-thumbnail" src="images/insta2.png">
               </a>
             </li>
             <li class="m-2">
-              <a href="#"><!-- Please make a link to your socials instead -->
-                <img alt="Image Placeholder" class="img-thumbnail" src="images/social-media-placeholder.jpg">
+              <a href="https://www.facebook.com/search/top?q=bark.bond"><!-- Please make a link to your socials instead -->
+                <img alt="Facebook Logo" class="img-thumbnail" src="images/Facebook2.png">
               </a>
             </li>
             <li class="m-2">
-              <a href="#"><!-- Please make a link to your socials instead -->
-                <img alt="Image Placeholder" class="img-thumbnail" src="images/social-media-placeholder.jpg">
-              </a>
+
             </li>
           </ul>
         
@@ -259,50 +319,71 @@
 
           <p class="fw-bold">Problem</p>
           <ul>
-            <li>List your top 3 problems you solve for your target group(s).</li>
-            <li>Describe briefly how the problems are solved now (existing alternatives).</li>
+            <li>Dog owners do not understand their dog's behavior- It is a given that humans and dogs cannot communicate with words and despite the humans still trying to talk to their dogs the only way that the animals can respond it through their actions. So, by knowing what each behavioral indication means people can understand and help their furry friends in the most optimal way.  </li>
+            <li>Finding time and effort to train your dog by yourself is difficult- From the problem interviews we did we found out that a big obstacle that dog owners have is time management. Between work and having to take care of themselves and their home they hardly find the time to train their dog.  </li>
+			<li>There is too much contradictory information online- If someone decides to train their dog on their own, they may go online but since it is such a common topic there are a lot of articles and apps that plainly contradict themselves. Moreover, from the problem interviews a theme that was mentioned often is that people often go to multiple different sources to get information about their dog.  </li>
           </ul>
           <p class="fw-bold">Solution</p>
           <ul>
-            <li>Outline the brand solution(s) you have for the above problem(s).</li>
+            <li>Providing information about dog's behavior sorted by age and breed- Our solution to the problem of people getting confused by the misleading  information about dogs is to have a filter that helps them pinpoint the information specifically to their dog’s breed and age.  </li>
+			<li>Giving people a schedule and tips on how to train their dogs- Our website would work on a day-by-day training schedule people can fill in how long their training sessions per day can be. That helps with the planning of the time management problem.  </li>
+			<li>Receiving professional tips by trainers- Following the idea of people personalizing the websites to the needs of their dog we also provide tips and tricks from trainers who have worked with multitude of different dog breeds and ages.  </li>
           </ul>
           <p class="fw-bold">Customer segments</p>
           <ul>
-            <li>List your target customers and/or users.</li>
-            <li>Describe briefly the characteristics of your ideal customer (early adopter, brand persona).</li>
+            <li>Millennials (26-41)- From research we found out that the people who are most likely to own or get a dog are millennials. There is a reason for multitudes for that either they are lonely and want a furry companion or they want to surprise their children and get a dog for them. Whatever the reason may be they are the largest age segmentation that own dogs that is why they are our primary target audiences. </li>
+            <li>Have a stable income- Since owning a dog can be quite costly with all the dog food, training and vet bills, we would expect our users to have a stable income. And despite the fact that our website will be significantly cheaper we are still planning to collaborate with trainers who will need to be paid for.   &nbsp;</li>
+            <li>People who already own a dog- Our website is primarily to help dog owners train and understand their dogs better thus we are targeting mainly people who already have a dog. Of course, people who are planning to get a dog or are curious about our website could freely use it but our marketing is towards people who have a dog. &nbsp;</li>
+            <li>People who seek a harmonious environment- Coming from our values we want our users to have the same virtues as us. We want dogs to be heard and understood so that both animals and humans can live stress free together. Our users must want to build a strong bond with their pet and actually put in the effort for that.  &nbsp;</li>
           </ul>
-          <p class="fw-bold">Unique value proposition</p>
+		  <p class="fw-bold">Unique value proposition</p>
           <ul>
-            <li>With a single, clear compelling message, state why your brand idea is different and worth paying attention to.</li>
-            <li></li>
+          <li>A website that helps a dog owner to understand their dog better by providing them with information and easy training exercises- What this basically means is that by taking all of the problems we gathered from our interviews we took the ones which were the most consistent. And we decided to tackle them with our website so that all users have the needed information in one place.  </li>
           </ul>
           <p class="fw-bold">Unfair advantage</p>
           <ul>
-            <li>List the aspect(s) of your brand that cannot easily be copied, also called your sustainable competitive advantage(s).</li>
+            <li>All information all in one place- Unlike other websites that give people only information about their dogs and no tips for training our website does both of those things. Moreover, if need be our website can connect our customers to professional trainers that can give even more personalized tips and suggestions. </li>
+			<li>Easily accessible- Other websites are not like other platforms where you need to pay to read the content. It is open to the outside public and people can see the tips and tricks and personalize it for their dogs without paying. The only paid product on our website is the premium version of it where they get more content and no advertisements.  </li>
+			<li>Pre-built Breed-Specific Programs- Another huge advantage of our website is the ability it gives users to make it as specific as possible for their dogs they can put in what breed and age the dogs are as well as what command they want to teach their pet.  </li>
           </ul>
           <p class="fw-bold">Channels</p>
           <ul>
-            <li>List your main path to customers.</li>
-            <li>How do you reach them? What channel(s) do you use.</li>
+            <li>Word of mouth marketing- Since most dog owners have friends and family that are very likely to be dog owners as well. We are hoping our users will suggest our app to them if they struggle with training their dog.  </li>
+            <li>Instagram- The second most used app by millennials is Instagram so naturally we will be posting there as well. Unlike Facebook on Instagram our main focus is to bring attention to our website by posting fun content that will engage a lot of people. </li>
+			<li>Facebook- From research we gathered that millennials, which is our target audience use Facebook the most frequently. It is the best platform to build a tight knit community where we can build a close bond with our customers. </li>
           </ul>
           <p class="fw-bold">Key metrics</p>
           <ul>
-            <li>List the key numbers that tell you how your brand experience is doing.</li>
-            <li>For example amount of users, downloads, visitors, subscriptions, sales etc. Numbers you are able to measure.</li>
+            <li>Website traffic- By seeing how many people visit the website we can acknowledge how our marketing campaigns are going as well as how we can fix our UX designs. Moreover, the more traffic we get the more we are likely to get partnerships and collaborations.  &nbsp;</li>
+            <li>Subscribers- Our subscribers will have access to more content. This shows how engaged and committed people are to our website and product. For us that will also mean that we have managed to build a stable community. </li>
+            <li>Daily users- The daily uses will help us keep track of what is the most popular feature of our website, the thing that people come to see most often, as well as help us understand how we can keep people occupied.  &nbsp;</li>
           </ul>
           <p class="fw-bold">Revenue streams</p>
           <ul>
-            <li>List your sources of revenue: describe the revenue model and the (different) revenue stream(s).</li>
+            <li>Ads on website- Our site will be the perfect place for advertisers in the pet industry to advertise their brand, think about dog food brands, pet insurance, and grooming services. We will provide a space for them to place their ad on our website. The revenue we will earn from this depends on different factors: the volume of traffic, user engagement, niche specificity, and the types of ads displayed (Isaac, 2024). 
+
+You can calculate how much revenue you earn for ads with how many times the user click on the ad. The average revenue per click differs between €0.10 and €1 (Making Money With Pay Per Click - Websavers, n.d.). So, it will completely depend on the user engagement how much we will earn with this.  </li>
+            <li>&nbsp;Subscriptions- To increase our revenue stream we will ask our users a subscription fee. The interviews have shown us that the majority of the target audience prefers a monthly subscription. So, they can cancel their subscription every month if they want to. They also mentioned that this will work best for them because they only need access to our website when a problem with their dog occurs. They mentioned that a fair price for this subscription will be between €5 and €10. This revenue stream will depend on how many users decide to take out a subscription. </li>
           </ul>
           <p class="fw-bold">Cost structure</p>
           <ul>
-            <li>List your main costs: define the fixed and variable costs.</li>
-            <li>Calculate the cost per unit.</li>
+            <li>Collaboration- With Barkbond, we intend to collaborate with dog trainers. Since our website will provide training tips, videos, and explanations, we find it important that we provide our users with reliable information. None of the website owners are dog experts, so that is why we choose to collaborate with those who are. Those trainers need to get paid, obviously.  
+Research has shown that the average salary of dog trainers in the Netherlands is €37.642 per year (salaryexpert, 2025). However, we are not planning to employ them, but to use them more like an information point. We will need them in the development period of our website plus maybe some touch ups that we will do over the years, since research about dogs is an ongoing process.  
+
+The average hourly salary of dog trainers is €18 (salaryexpert, 2025). But since we are a new brand, we do not have that much to spend yet. So, we will decrease their hourly salary to €12. In exchange for this decrease we will offer them visibility on our website. 
+
+We are planning to offer the dog trainers a zero-hour contract. Where they can keep track of the hours they spend working with us. And receive their salary accordingly. </li>
+            <li>Server upkeep- a website needs to stay updated, so we are planning to hire someone who will do that for us. They need to make sure that the website is always up to date to the newest software, so it can run better and faster, they need to fix problems if something goes wrong, to clean up files which ensures enough space, and they need to protect it from viruses and hackers.  
+
+To save some costs, we decided to work with a free-lancer. Research shows that their hourly salary is around €17 (Payscale, n.d.). But again, since we will decrease their salary, because we are an upcoming brand, we will end up around €14 per hour. We will also offer them a zero-hour contract. So, they can write the hours they work for us down and then they will receive their salary accordingly. &nbsp;</li>
+<li>Sales and marketing- Our website also has a marketing campaign around it. However, we are planning to do the marketing on our own, since our team is experienced in it, and also to save some money. 
+However, we want to advertise our website mainly on Instagram. Instagram asks for advertising costs. Per click, per 1,000 views, and per engagement (like, comment, share). Per click they ask between €0.23 and €1.85. Per 1,000 views, they ask about €3.70 to €9.25. And per engagement around €0.03 to €0.10.  
+This all sums up to an average cost of €2,530 per month (What’s The Cost Of Instagram Ads?, n.d.).  </li>
           </ul>
           <p class="fw-bold">Services/products</p>
           <ul>
-            <li>State what your product and/or service is and how this contributes to your unique value proposition.</li>
-            <li>Clarify the fit between the product/service developed and the brand identity/brand image.</li>
+            <li>By offering tips from industry specialists on dog training, we support our UVP by supplying simplified tips and tricks on dog training to our website visitors and customers</li>
+            <li>Minimalistic branding supports our goal of providing simple advice to regular, every-day people which lack the time to spend hours doing research online</li>
           </ul>
 
           <h4 id="management-2" class="mt-2">Validation of Assumptions</h4>
@@ -313,27 +394,21 @@
 
           <h2 id="appendix" class="mt-5">Appendix</h2>
 
-          <p>
-            Please use the list below to provide links to evidence for all parts of your justication.
-            Please double-check all links before delivering the website.
-            Do not hesitate to refer to these numbers above.
-          </p>
-
           <ol>
             <li>
-              <a href="https://" target="_blank">Description of evidence #1</a>
+              <a href="https://edubuas-my.sharepoint.com/my?id=%2Fpersonal%2F231472%5Fbuas%5Fnl%2FDocuments%2FDog%20stuff%20for%20PRJ4%2FContent" target="_blank">Content</a>
             </li>
             <li>
-              <a href="https://" target="_blank">Description of evidence #2</a>
+              <a href="https://edubuas-my.sharepoint.com/:f:/g/personal/231472_buas_nl/EqDAZN2dqu5IroH50MFH7eYBDcD3boFMzJ50SrlZPEmgZw?e=lHnDR2" target="_blank">Production</a>
             </li>
             <li>
-              <a href="https://" target="_blank">Description of evidence #3</a>
+              <a href="https://edubuas-my.sharepoint.com/my?id=%2Fpersonal%2F231472%5Fbuas%5Fnl%2FDocuments%2FDog%20stuff%20for%20PRJ4%2FMarketing" target="_blank">Marketing</a>
             </li>
             <li>
-              <a href="https://" target="_blank">Description of evidence #4</a>
+              <a href="https://edubuas-my.sharepoint.com/my?id=%2Fpersonal%2F231472%5Fbuas%5Fnl%2FDocuments%2FDog%20stuff%20for%20PRJ4%2FManagement" target="_blank">Management</a>
             </li>
             <li>
-              <a href="https://" target="_blank">Description of evidence #5</a>
+              <a href="https://edubuas-my.sharepoint.com/my?id=%2Fpersonal%2F231472%5Fbuas%5Fnl%2FDocuments%2FDog%20stuff%20for%20PRJ4" target="_blank">All documentation</a>
             </li>
           </ol>
           
