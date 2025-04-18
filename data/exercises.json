@@ -1,0 +1,211 @@
+[
+    {
+      "id": 1,
+      "breed": "Labrador",
+      "age": "3 Months",
+      "title": "Sit Command",
+      "shortDesc": "A fundamental command ideal for Labradors.",
+      "img": "images/labrador-exercise-sit.jpeg",
+      "tags": ["Basic", "Reward-Based"],
+      "detail": {
+        "description": "The Sit Command lays the groundwork for all further obedience training. Start in a quiet area with minimal distractions. Hold a treat just above your dog’s nose and slowly move your hand back over its head. As your pup naturally follows the treat, its bottom will lower—at that moment, clearly say “Sit,” reward with the treat, and praise warmly. Repeat 5–10 times per session, gradually phasing out the treat so your dog learns to sit on command alone.",
+        "videoUrl": "https://www.youtube.com/embed/EDgi2sLlWAU"
+      }
+    },
+    {
+      "id": 2,
+      "breed": "Labrador",
+      "age": "6 Months",
+      "title": "Fetch Game",
+      "shortDesc": "An engaging fetch game for a playful Labrador.",
+      "img": "images/labrador-exercise-fetch.jpeg",
+      "tags": ["Fun", "All Ages"],
+      "detail": {
+        "description": "Fetch isn’t just play—it’s a way to burn energy and reinforce recall. Start by choosing a favorite toy or ball. With your dog on a loose leash, show them the toy, toss it a short distance, and encourage them to chase it. When they pick it up, use a consistent recall cue (like “Here!”) and reward heavily when they return the toy. Gradually increase distance and vary direction to keep it challenging.",
+        "videoUrl": "https://www.youtube.com/embed/bVgMfQaZfeo"
+      }
+    },
+    {
+      "id": 3,
+      "breed": "Labrador",
+      "age": "8 Weeks",
+      "title": "Leash Training",
+      "shortDesc": "Calm walks begin with proper leash training for young Labradors.",
+      "img": "images/labrador-exercise-leash.jpeg",
+      "tags": ["Leash Training", "Beginner"],
+      "detail": {
+        "description": "Introduce the leash in a familiar environment. Let your puppy sniff and wear it around the house first. Attach the leash and let them drag it under supervision. Next, pick up the leash and walk alongside them—if they pull, stop and wait for slack before moving again. Reward them for walking beside you. Keep sessions short and positive to avoid frustration.",
+        "videoUrl": "https://www.youtube.com/embed/y2yj2xtCo-k"
+      }
+    },
+    {
+      "id": 4,
+      "breed": "Labrador",
+      "age": "3 Months",
+      "title": "Rollover Trick",
+      "shortDesc": "A playful trick to build fun and responsiveness.",
+      "img": "images/labrador-exercise-rollover.jpeg",
+      "tags": ["Trick", "Fun"],
+      "detail": {
+        "description": "Rollover builds body awareness and strengthens your bond. Start with your dog in a 'Down' position. Hold a treat near their nose and slowly move it toward their shoulder—this should cause them to roll onto their side. As they follow the treat, continue the motion so they complete the roll. Say “Rollover,” reward, and repeat. Practice a few minutes daily until they link the word to the action.",
+        "videoUrl": "https://www.youtube.com/embed/IdIQiuWK78M"
+      }
+    },
+    {
+      "id": 5,
+      "breed": "Beagle",
+      "age": "3 Months",
+      "title": "Sit Command",
+      "shortDesc": "Basic command training tailored for Beagles.",
+      "img": "images/beagle-exercise-sit.jpeg",
+      "tags": ["Basic", "Reward-Based"],
+      "detail": {
+        "description": "For scent-driven Beagles, use high-value treats. Follow the same steps: lure with a treat, cue “Sit,” then reward instantly. Keep sessions brief and move locations to generalize the command amid distractions.",
+        "videoUrl": "https://www.youtube.com/embed/EDgi2sLlWAU"
+      }
+    },
+    {
+      "id": 6,
+      "breed": "Beagle",
+      "age": "6 Months",
+      "title": "Fetch Game",
+      "shortDesc": "Keep your Beagle active with a fun game of fetch.",
+      "img": "images/beagle-exercise-fetch.jpeg",
+      "tags": ["Fun", "All Ages"],
+      "detail": {
+        "description": "Beagles love chasing. Use a toy that makes noise or has scent. Toss it, encourage them verbally, and reward on return. Vary the height and angle to keep them engaged.",
+        "videoUrl": "https://www.youtube.com/embed/bVgMfQaZfeo"
+      }
+    },
+    {
+      "id": 7,
+      "breed": "Beagle",
+      "age": "8 Weeks",
+      "title": "Leash Training",
+      "shortDesc": "Effective leash training for a young and active Beagle.",
+      "img": "images/beagle-exercise-leash.jpeg",
+      "tags": ["Leash Training", "Beginner"],
+      "detail": {
+        "description": "Introduce a lightweight leash indoors first. Once comfortable, practice short walks, rewarding loose leash and calm behavior. Use treats sparingly and praise generously.",
+        "videoUrl": "https://www.youtube.com/embed/y2yj2xtCo-k"
+      }
+    },
+    {
+      "id": 8,
+      "breed": "Beagle",
+      "age": "3 Months",
+      "title": "Rollover Trick",
+      "shortDesc": "Fun rollover exercise perfect for playful Beagles.",
+      "img": "images/beagle-exercise-rollover.jpeg",
+      "tags": ["Trick", "Fun"],
+      "detail": {
+        "description": "Follow the same lure approach as with Labradors but use especially tasty treats. Beagles can get distracted—practice in a quiet spot until they master it.",
+        "videoUrl": "https://www.youtube.com/embed/IdIQiuWK78M"
+      }
+    },
+    {
+      "id": 9,
+      "breed": "German Shepherd",
+      "age": "3 Months",
+      "title": "Sit Command",
+      "shortDesc": "A fundamental command designed for German Shepherds.",
+      "img": "images/shepherd-exercise-sit.jpeg",
+      "tags": ["Basic", "Reward-Based"],
+      "detail": {
+        "description": "Shepherds are quick learners. Use firm voice cues and high-value rewards. Add a hand signal once they reliably sit on verbal command alone.",
+        "videoUrl": "https://www.youtube.com/embed/EDgi2sLlWAU"
+      }
+    },
+    {
+      "id": 10,
+      "breed": "German Shepherd",
+      "age": "6 Months",
+      "title": "Fetch Game",
+      "shortDesc": "An exciting fetch game tailored for German Shepherds.",
+      "img": "images/shepherd-exercise-fetch.jpeg",
+      "tags": ["Fun", "All Ages"],
+      "detail": {
+        "description": "They love structured games—throw a ball into a fenced area, call them back, reward. Increase distance gradually to build stamina.",
+        "videoUrl": "https://www.youtube.com/embed/bVgMfQaZfeo"
+      }
+    },
+    {
+      "id": 11,
+      "breed": "German Shepherd",
+      "age": "8 Weeks",
+      "title": "Leash Training",
+      "shortDesc": "Learn calm walking techniques with leash training for German Shepherds.",
+      "img": "images/shepherd-exercise-leash.jpeg",
+      "tags": ["Leash Training", "Beginner"],
+      "detail": {
+        "description": "Use a sturdy leash and harness. Reward walking beside you, and ignore pulling by stopping until slack returns. Keep sessions short and consistent.",
+        "videoUrl": "https://www.youtube.com/embed/y2yj2xtCo-k"
+      }
+    },
+    {
+      "id": 12,
+      "breed": "German Shepherd",
+      "age": "3 Months",
+      "title": "Rollover Trick",
+      "shortDesc": "A fun trick exercise for German Shepherds to boost their agility.",
+      "img": "images/shepherd-exercise-rollover.jpeg",
+      "tags": ["Trick", "Fun"],
+      "detail": {
+        "description": "Shepherds pick up tricks quickly—use minimal repetition and gradually phase out treats. Encourage speed once they get the motion.",
+        "videoUrl": "https://www.youtube.com/embed/IdIQiuWK78M"
+      }
+    },
+    {
+      "id": 13,
+      "breed": "Poodle",
+      "age": "3 Months",
+      "title": "Sit Command",
+      "shortDesc": "Basic command training designed for Poodles.",
+      "img": "images/poodle-exercise-sit.jpeg",
+      "tags": ["Basic", "Reward-Based"],
+      "detail": {
+        "description": "Poodles respond well to praise—mix treats with verbal and petting rewards. Add duration (stay) once they master sit.",
+        "videoUrl": "https://www.youtube.com/embed/EDgi2sLlWAU"
+      }
+    },
+    {
+      "id": 14,
+      "breed": "Poodle",
+      "age": "6 Months",
+      "title": "Fetch Game",
+      "shortDesc": "A lively fetch game perfect for active Poodles.",
+      "img": "images/poodle-exercise-fetch.jpeg",
+      "tags": ["Fun", "All Ages"],
+      "detail": {
+        "description": "Keep sessions short and bright—poodles love variety. Switch between balls, frisbees, and tug toys to maintain interest.",
+        "videoUrl": "https://www.youtube.com/embed/bVgMfQaZfeo"
+      }
+    },
+    {
+      "id": 15,
+      "breed": "Poodle",
+      "age": "8 Weeks",
+      "title": "Leash Training",
+      "shortDesc": "Techniques for calm walks tailored for young Poodles.",
+      "img": "images/poodle-exercise-leash.jpeg",
+      "tags": ["Leash Training", "Beginner"],
+      "detail": {
+        "description": "Use a lightweight harness so they feel comfortable. Reward frequently and keep sessions brief to avoid fatigue.",
+        "videoUrl": "https://www.youtube.com/embed/y2yj2xtCo-k"
+      }
+    },
+    {
+      "id": 16,
+      "breed": "Poodle",
+      "age": "3 Months",
+      "title": "Rollover Trick",
+      "shortDesc": "A fun and playful trick exercise for Poodles.",
+      "img": "images/poodle-exercise-rollover.jpeg",
+      "tags": ["Trick", "Fun"],
+      "detail": {
+        "description": "Poodles are highly intelligent—add verbal cues (“Roll”) early. Use target stick/clicker if you want a faster shape process.",
+        "videoUrl": "https://www.youtube.com/embed/IdIQiuWK78M"
+      }
+    }
+  ]
+  
