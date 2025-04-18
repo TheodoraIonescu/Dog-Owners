@@ -466,6 +466,62 @@
       overflow: hidden;
     }
     
+    .instagram-grid {
+      display: grid;
+      /* auto-fit: fill the row with as many columns as fit
+         minmax(250px, 1fr): each column is at least 250px wide, but can grow */
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 16px;                /* space between items */
+      padding: 16px;            /* optional outer padding */
+    }
+    
+    .instagram-item {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .instagram-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 8px;       /* optional rounded corners */
+    }
+    
+    .instagram-item .caption {
+      margin-top: 8px;
+      font-size: 14px;
+      line-height: 1.4;
+      color: #333;
+    }
+
+    .social-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 16px;
+      padding: 16px;
+    }
+    
+    .social-item {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    /* Make embeds fill the column width */
+    .social-item blockquote.instagram-media,
+    .social-item .fb-post {
+      width: 100% !important;
+      margin: 0 auto; /* center if narrower */
+    }
+    
+    /* Optional: style your captions */
+    .social-item .caption {
+      margin-top: 8px;
+      font-size: 14px;
+      line-height: 1.4;
+      color: #333;
+    }
+    
+
     /* Small tweaks for very small screens */
     @media (max-width: 576px) {
       .detail-card .row {
@@ -497,5 +553,7 @@
         padding-right: 15px;
       }
     }
+
+      
 
 
