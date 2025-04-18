@@ -475,26 +475,26 @@ body {
     }
   }
 
-  /* Mobile-first responsiveness */
-  @media (max-width: 1250px) {
-    .staff-overlay p {
-      font-size: 14px; /* Reduce the font size on mobile */
-      line-height: 1.4; /* Adjust line height for better readability */
-      padding: 0 10px; /* Add some padding to avoid text touching the edges */
-      max-height: 150px; /* Limit height to avoid text overflow */
-      overflow-y: auto; /* Make the description scrollable if it overflows */
-    }
-
-    /* Adjust staff-info section to make sure it's visible */
-    .staff-info {
-      padding: 10px; /* Add some space around text */
-    }
-
-    /* Reduce the spacing around the container */
-    .container {
-      padding-left: 15px;
-      padding-right: 15px;
-    }
+/* Mobile-first responsiveness */
+@media (max-width: 1250px) {
+  .staff-overlay p {
+    font-size: 14px; /* Reduce the font size on mobile */
+    line-height: 1.4; /* Adjust line height for better readability */
+    padding: 0 10px; /* Add some padding to avoid text touching the edges */
+    max-height: 150px; /* Limit height to avoid text overflow */
+    overflow-y: auto; /* Make the description scrollable if it overflows */
   }
+
+  /* Adjust staff-info section to make sure it's visible */
+  .staff-info {
+    padding: 10px; /* Add some space around text */
+  }
+
+  /* Reduce the spacing around the container */
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 
 
