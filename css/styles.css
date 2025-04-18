@@ -384,3 +384,130 @@ body {
 .train-section .card-title {
 	color: var(--flame) !important;
   }
+
+/* ======================================================
+   Detail‑Page Styles
+   ====================================================== */
+  .detail-card {
+    margin-top: 2rem;
+  }
+  
+  /* Make the two‑column grid a bit tighter */
+  .detail-card .row {
+    --bs-gutter-x: 2rem;
+  }
+  
+  /* Sidebar Meta */
+  .detail-card aside h2 {
+    font-family: 'Candal', sans-serif;
+    color: var(--bistre);
+    margin-bottom: 0.75rem;
+  }
+  .detail-card aside img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  .detail-card aside ul {
+    padding: 0;
+    list-style: none;
+    margin-bottom: 1rem;
+  }
+  .detail-card aside ul li {
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+  }
+  .detail-card aside .badge {
+    background-color: var(--columbia-blue);
+    color: var(--bistre);
+    font-weight: bold;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .detail-card aside .badge:hover {
+    background-color: var(--flame);
+    color: white;
+  }
+  
+  /* Section Headings */
+  .detail-card h3 {
+    font-family: 'Candal', sans-serif;
+    color: var(--bistre);
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--columbia-blue);
+    display: inline-block;
+    padding-bottom: 0.25rem;
+  }
+  
+  /* Description – preserve line breaks */
+  .detail-card p {
+    white-space: pre-line;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Ordered Steps */
+  .detail-card ol {
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .detail-card ol li {
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+  }
+  
+  /* Video Embed */
+  .detail-card .ratio {
+    margin-top: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  /* Small tweaks for very small screens */
+  @media (max-width: 576px) {
+    .detail-card .row {
+      --bs-gutter-x: 1rem;
+    }
+    .detail-card h3 {
+      font-size: 1.25rem;
+    }
+  }
+
+/* Mobile-first responsiveness */
+@media (max-width: 768px) {
+  .staff-overlay p {
+    font-size: 14px; /* Reduce the font size on mobile */
+    line-height: 1.4; /* Adjust line height for better readability */
+    padding: 0 10px; /* Add some padding to avoid text touching the edges */
+    max-height: 150px; /* Limit height to avoid text overflow */
+    overflow-y: auto; /* Make the description scrollable if it overflows */
+  }
+
+  /* Adjust staff-info section to make sure it's visible */
+  .staff-info {
+    padding: 10px; /* Add some space around text */
+  }
+
+  /* Make sure the image doesn't take too much space on mobile */
+  .staff-image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Reduce the spacing around the container */
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+/* Optional: If you'd like to limit the amount of visible text without scrolling */
+@media (max-width: 480px) {
+  .staff-overlay p {
+    font-size: 12px; /* Smaller font size for very small screens */
+    line-height: 1.3;
+    max-height: 120px; /* Limit the height further */
+  }
+}
