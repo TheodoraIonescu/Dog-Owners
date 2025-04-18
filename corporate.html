@@ -14,7 +14,18 @@
       top: 80px; /* Adjust this to match or exceed your navbar height */
       position: sticky;
       z-index: 1; /* Just to be safe */
+      
     }
+      .persona-container{
+        display: block;
+        flex: auto;
+        flex-direction: column;
+      }
+      .persona-container img{
+        width: 85%;
+        height: 85%;
+        display: cover;
+      }
     </style>
     <!-- Bootstrap Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -24,7 +35,6 @@
     <!-- Google Analytics code goes just below here (check PRJ4 Guide for details) -->
 
     <!-- End of Google Analytics code -->
-    
   </head>
   <body data-bs-spy="scroll" data-bs-target="#navbar-corporate" data-bs-smooth-scroll="true">
 
@@ -108,15 +118,15 @@
           <h2 id="general"><strong>General Information</strong></h2>
 <p>
         This branded website is publicly available at
-        <a href="https://theodoraionescu.github.io/Dog-Owners/training.html">https://theodoraionescu.github.io/Dog-Owners/training.html</a>
+        <a href="https://theodoraionescu.github.io/Dog-Owners/index.html">Bark Bond - https://theodoraionescu.github.io/Dog-Owners/index.html</a>
         <em></em>
         </p>
           <h5>
             This website was created by:
           </h5>
           <ol>
-            <li>Theodora Ionescu&nbsp; (ID: 230974)</li>
-            <li>Edia Vaculíková&nbsp; &nbsp; &nbsp;(ID: 247290)</li>
+            <li>Theodora Ionescu&nbsp; (ID: 230974)</li> 
+            <li>Edita Vaculíková&nbsp; &nbsp; &nbsp;(ID: 247290)</li>
 	        <li>Floor Dillen&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (ID: 232904)</li>
 			<li>Veronika Bozukova (ID: 231881)</li>
 			<li>Mihnea Velea&nbsp; &nbsp; &nbsp; &nbsp;(ID: 231472)</li>
@@ -128,7 +138,6 @@
           <!-- Start Content -->
 
           <h2 id="content">Content</h2>
-          <p>Please clarify here the match between students and pieces of content. Make sure that you provide a <u>link</u> to the correct page within the website</p>
           <table class="table table-bordered table-striped">
             <thead>
               <tr class="bg-white">
@@ -144,7 +153,9 @@
                 <td>230974</td>
                 <td>Value:&nbsp;Parenting with a Woof</td>
                 <td>
-                  <a href="#management">Management</a>
+                  <a href="#marketing">Marketing</a>
+                  <br>
+                  <a href="index.html">Website</a>
                 </td>
               </tr>
               <tr>
@@ -152,7 +163,7 @@
                 <td>247290</td>
                 <td>Value: Bark effortlessly</td>
                 <td>
-                  <a href="#marketing">Marketing</a>
+                  <a href="#production">Production</a>
                 </td>
               </tr>
               <tr>
@@ -160,7 +171,7 @@
                 <td>232904</td>
                 <td>Value: Pawsitively responsible</td>
                 <td>
-                  <a href="#production">Production</a>
+                  <a href="#content">Content</a>
                 </td>
               </tr>
               <tr>
@@ -168,7 +179,7 @@
                 <td>231881</td>
                 <td>Value: Bark in harmony</td>
                 <td>
-                  <a href="#content">Content</a>
+                  <a href="#management">Management</a>
                 </td>
               </tr>
 				 <tr>
@@ -176,7 +187,7 @@
                 <td>231472</td>
                 <td>Value: Sharing a bone</td>
                 <td>
-                  <a href="index.html">Website</a>
+                  <a href="corporate.html">Corporate Page</a>
                 </td>
               </tr>
             </tbody>
@@ -198,13 +209,18 @@ Both elements work on their own or together — like a good human-dog duo.  &nbs
 		  <h4 id="product-description">Product Description</h4>
 	      <p>Welcome to <strong>Barkbond</strong>, where training your dog feels less like a chore and more like a fun adventure! We’re all about helping you build an unbreakable bond with your four-legged bestie through easy, effective training and a better understanding of dog behavior. Whether you're dealing with zoomies, stubborn leash pulling, or a pup who thinks your couch is their personal throne—we got you! Here, you'll find expert-backed training tips, step-by-step guides, and cool insights into what’s actually going on inside your dog’s head (spoiler: it’s not just food). From mastering the basics to teaching next-level tricks, we make training simple, stress-free, and even fun! </p>
 		  <h4 id="persona">Brand Target Persona</h4>
-		  <img alt="Persona 1" class="img-thumbnail" src="images/persona1.png">
-		  <img alt="Persona 2" class="img-thumbnail" src="images/persona2.png">
-	      <!-- End Content, start Production -->
-          
+
+      <div class='persona-container'>
+        <img alt="Persona 1" class="img-thumbnail" src="images/persona1.png">
+        <img alt="Persona 2" class="img-thumbnail" src="images/persona2.png">
+      </div>
+	      <!-- End Content, start Production -->   
           <h2 id="production" class="mt-5">Production</h2>
           <h4 id="production-1" class="mt-2">Design Elements</h4>
           <p>Please provide a list of design elements alongside their justifications:</p>
+          <div class='persona-container'>
+            <img alt="palette" class="img-thumbnail" src="images/palette.png">
+          </div>
           <ul>
             <li>
               <em>We wanted a color palette which was bright and cheery, with a few contrasting colors where needed.&nbsp; Most of all, the color palette had to illustrate a light-hearted tone and have a cheerful effect on visitors. as well as eminate trust and harmony. As such, we decided to go with pastel colors in general, with two darker colors to create a pleasant contrast and avoid overloading the user with bright colors. This lead us to these choices:&nbsp; &nbsp; &nbsp;<br>
@@ -228,15 +244,14 @@ Both elements work on their own or together — like a good human-dog duo.  &nbs
             </li>
             <li>Font choices - Lazy dog is the main font, chosen for its casual style and friendly appearance, while Candal has been chosen for most titles and headings as it has a more easily readible appearance, as well as a clear and comanding look to contrast with Lazy Dog.&nbsp;</li>
             <li>For the clarity of the website's intended target audience, the home page features the brand name and an image of a dog as soon as it opens up. Overall, the page was kept as minimalistic as possible in order to make it easier for our target audience to utilize, as many of them are less tech-savvy than our generation. The menu's are kept simple and clear, with most buttons for navigation located at the top of the page in common with other web pages to give BarkBond's website a familiar look and feel. The filter sistem for dog breeds and age is a drop-down menu to allow our visitors to have an overview of all currently available information at the time of visiting, instead of having to search around for a page which might not exist.&nbsp;</li>
-
-            <li>Please relate these elements to other units, for example:
-              <ul>
-                <li>The minimalistic look also fits in with the brand's minimalistic style, with the logo designed out of simple line-art which gives a light-hearted and relaxed tone to the brand.&nbsp;</li>
-                <li>The light and lively feel of the website also fits with our communication strategy on social media, which has been filled with trendy memes and joke-like posts, filled with puns and light humo in order to fit-in with our overall theme and vision.&nbsp;</li>
-                <li>The chat section is the most unique feature of the website when compared to competitors, and the chat feature is part of the main selection of menu's, attracting more attention to the feature.&nbsp; </li>
-              </ul>
+            <li>The minimalistic look also fits in with the brand's minimalistic style, with the logo designed out of simple line-art which gives a light-hearted and relaxed tone to the brand.&nbsp;</li>
+            <li>The light and lively feel of the website also fits with our communication strategy on social media, which has been filled with trendy memes and joke-like posts, filled with puns and light humo in order to fit-in with our overall theme and vision.&nbsp;</li>
+            <li>The chat section is the most unique feature of the website when compared to competitors, and the chat feature is part of the main selection of menu's, attracting more attention to the feature.&nbsp; </li>
             </li>
           </ul>
+          <div class='persona-container'>
+            <img alt="palette" class="img-thumbnail" src="images/logo-exp.png">
+          </div>
           <h4 id="production-2" class="mt-2">Credits</h4>
           <p></p>
           <ul>
@@ -421,6 +436,23 @@ This all sums up to an average cost of €2,530 per month (What’s The Cost Of 
         </div>
       </div>
     </main>
+
+    <!-- Footer Section -->
+    <div class="footer">
+      <div class="container text-center">
+        <p>Contact us: <a href="mailto:info@barkbond.com">info@barkbond.com</a></p>
+        <div class="social-icons d-flex justify-content-center gap-3 mt-2">
+          <a href="https://www.instagram.com/bark.bond/" target="_blank">
+            <img src="images/instagram.svg" alt="Instagram" width="48" height="48">
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61574245137512" target="_blank">
+            <img src="images/facebook.svg" alt="Facebook" width="48" height="48">
+          </a>
+        </div>
+        <p class="mt-3">&copy; 2025 Barkbond</p>
+      </div>
+    </div>
+    <!-- End Footer -->
 
   </body>
 </html>
