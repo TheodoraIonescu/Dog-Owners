@@ -1,500 +1,501 @@
-/* 1. Import Candal for headings */
-@import url('https://fonts.googleapis.com/css2?family=Candal&display=swap');
+  /* 1. Import Candal for headings */
+  @import url('https://fonts.googleapis.com/css2?family=Candal&display=swap');
 
-/* Quicksand */
-@import url('https://fonts.googleapis.com/css2?family=Candal&family=Quicksand&display=swap');
+  /* Quicksand */
+  @import url('https://fonts.googleapis.com/css2?family=Candal&family=Quicksand&display=swap');
 
 
-/* Color Variables */
-:root {
-  --columbia-blue: #D2E8FF;
-  --flame: #EA672D;
-  --bistre: #5D372A;
-  --cal-poly-green: #26422A;
-  --hero-bg: #FDEDC1;
-  --body-text: #333333;
-}
-
-/* Global Styles */
-body {
-  background-color: var(--hero-bg);
-  color: var(--body-text);
-  font-family: 'Quicksand', sans-serif; /* More readable body font */
-  margin: 0;
-  padding: 0;
-}
-
-/* Headings & Titles (Candal) */
-.section-title,
-.title,
-.sub-title,
-.card-title,
-.hero-text h1,
-.chat-header h3 {
-  font-family: 'Candal', sans-serif;      /* use Candal for headings */
-}
-
-/* Navigation Styles */
-.nav-container {
-  background: var(--columbia-blue);
-  z-index: 1000;
-  position: relative;
-  padding: 0.5rem 1rem;
-}
-.nav-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.logo {
-  font-weight: bold;
-  color: var(--bistre);
-  font-size: 1.5rem;
-}
-.nav-links {
-  display: flex;
-  gap: 1rem;
-}
-.nav-link {
-  color: var(--bistre);
-  text-decoration: none;
-  font-weight: bold;
-}
-.nav-link:hover {
-  color: var(--flame);
-}
-
-/* Hero Section */
-.hero {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
-.hero-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-.hero-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: var(--hero-bg);
-  text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
-}
-.hero-text h1 {
-  font-size: 4rem;
-  margin: 0;
-}
-
-/* Section Styling */
-.section {
-  padding: 4rem 0;
-}
-.section-title {
-  color: var(--bistre);
-  margin-bottom: 2rem;
-}
-
-/* Our Values Section */
-.values-section .card-title {
-  font-size: 1.25rem;
-  color: var(--flame);
-}
-.values-section .card-text {
-  color: var(--body-text);
-}
-.value-card {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
-  transition: transform 0.2s ease;
-}
-.value-card:hover {
-  transform: translateY(-5px);
-}
-
-/* Footer Styles */
-.footer {
-  background: var(--columbia-blue);
-  padding: 2rem 0;
-  text-align: center;
-}
-.footer a {
-  color: var(--flame);
-  text-decoration: none;
-  margin: 0 5px;
-}
-.footer a:hover {
-  text-decoration: underline;
-}
-.social-icons a {
-  margin: 0 10px;
-  font-size: 1.5rem;
-}
-
-/* Cards and Buttons */
-.card {
-  border: none;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-.btn-primary {
-  background-color: var(--flame);
-  border-color: var(--flame);
-}
-.btn-primary:hover {
-  background-color: var(--bistre);
-  border-color: var(--bistre);
-}
-.btn-success {
-  background-color: var(--cal-poly-green);
-  border-color: var(--cal-poly-green);
-}
-.btn-success:hover {
-  background-color: var(--bistre);
-  border-color: var(--bistre);
-}
-
-/* Chat Page Styles */
-.chat-wrapper {
-  display: flex;
-  margin-top: 75px;
-  height: calc(100vh - 80px);
-}
-.chat-sidebar {
-  width: 250px;
-  background-color: var(--columbia-blue);
-  padding: 1rem;
-  border-right: 2px solid var(--flame);
-}
-.chat-sidebar h4 {
-  color: var(--bistre);
-  margin-bottom: 1rem;
-}
-.channel-list {
-  list-style: none;
-  padding: 0;
-}
-.channel {
-  padding: 0.5rem;
-  cursor: pointer;
-  border-radius: 5px;
-  font-weight: bold;
-  color: var(--bistre);
-}
-.channel:hover,
-.channel.active {
-  background-color: var(--flame);
-  color: white;
-}
-.chat-main {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  background-color: #fff;
-  padding: 1rem;
-}
-.chat-header {
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 0.5rem;
-  margin-bottom: 1rem;
-}
-.chat-box {
-  flex-grow: 1;
-  overflow-y: auto;
-  padding: 1rem;
-  border: 1px solid #ddd;
-  background-color: #f9f9f9;
-  margin-bottom: 1rem;
-}
-.chat-message {
-  margin-bottom: 1rem;
-}
-.chat-input {
-  display: flex;
-  gap: 0.5rem;
-}
-.chat-input input {
-  flex-grow: 1;
-  padding: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-.chat-input button {
-  background-color: var(--flame);
-  color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  font-weight: bold;
-  cursor: pointer;
-}
-.chat-input button:hover {
-  background-color: var(--bistre);
-}
-
-/* Aspect Ratio Box for Exercise Images */
-.aspect-ratio-box {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  overflow: hidden;
-  border-radius: 8px;
-  margin-bottom: 15px;
-}
-.aspect-ratio-box img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* Section Titles */
-.title {
-  color: var(--bistre);
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-}
-.sub-title {
-  color: var(--cal-poly-green);
-  font-size: 1.25rem;
-}
-.sub-title span {
-  color: var(--flame);
-}
-
-/* Staff Grid */
-.staff-wrapper {
-  margin-bottom: 2rem;
-}
-.staff {
-  overflow: hidden;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  background: #fff;
-}
-.staff-image {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 1 / 1; /* Square aspect ratio, or use e.g. 4 / 3 for landscape */
-  overflow: hidden;
-  border-radius: 8px; /* Optional: keep this for rounded corners */
-}
-.staff-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;  /* This ensures the image fills the box while preserving aspect ratio */
-  display: block;
-}
-.staff-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(93, 55, 42, 0.85);
-  color: #fff;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-.staff-image:hover .staff-overlay {
-  opacity: 1;
-}
-.staff-info {
-  padding: 0.75rem;
-}
-.staff-info h2 {
-  color: var(--bistre);
-  margin-bottom: 0.25rem;
-}
-.staff-info span {
-  color: var(--cal-poly-green);
-  font-style: italic;
-}
-.staff-social {
-  margin-top: 0.75rem;
-}
-.staff-social li {
-  display: inline-block;
-  margin: 0 0.25rem;
-}
-.staff-social a {
-  color: #fff;
-  font-size: 1.25rem;
-}
-
-/* Vision Section */
-.vision-section {
-  padding: 4rem 0;
-}
-.vision-text .section-title {
-  color: var(--bistre);
-  margin-bottom: 1rem;
-}
-.vision-text p {
-  color: var(--body-text);
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 0;
-}
-.vision-image img {
-  max-width: 80%;
-  height: auto;
-}
-
-/* Mission Section*/
-.mission-section {
-  padding: 4rem 0;
-}
-
-.mission-text .section-title {
-  color: var(--bistre);
-  margin-bottom: 1rem;
-}
-
-.mission-text p {
-  color: var(--body-text);
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 0;
-}
-
-.mission-image img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Preserve typed-in line breaks in Vision & Mission paragraphs */
-.vision-text p,
-.mission-text p {
-  white-space: pre-line; /* collapse extra spaces, but keep single line breaks */
-}
-
-.train-section .card-title {
-	color: var(--flame) !important;
+  /* Color Variables */
+  :root {
+    --columbia-blue: #D2E8FF;
+    --flame: #EA672D;
+    --bistre: #5D372A;
+    --cal-poly-green: #26422A;
+    --hero-bg: #FDEDC1;
+    --body-text: #333333;
   }
 
-/* ======================================================
-   Detail‑Page Styles
-   ====================================================== */
-  .detail-card {
-    margin-top: 2rem;
-  }
-  
-  /* Make the two‑column grid a bit tighter */
-  .detail-card .row {
-    --bs-gutter-x: 2rem;
-  }
-  
-  /* Sidebar Meta */
-  .detail-card aside h2 {
-    font-family: 'Candal', sans-serif;
-    color: var(--bistre);
-    margin-bottom: 0.75rem;
-  }
-  .detail-card aside img {
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 1rem;
-  }
-  .detail-card aside ul {
+  /* Global Styles */
+  body {
+    background-color: var(--hero-bg);
+    color: var(--body-text);
+    font-family: 'Quicksand', sans-serif; /* More readable body font */
+    margin: 0;
     padding: 0;
-    list-style: none;
+  }
+
+  /* Headings & Titles (Candal) */
+  .section-title,
+  .title,
+  .sub-title,
+  .card-title,
+  .hero-text h1,
+  .chat-header h3 {
+    font-family: 'Candal', sans-serif;      /* use Candal for headings */
+  }
+
+  /* Navigation Styles */
+  .nav-container {
+    background: var(--columbia-blue);
+    z-index: 1000;
+    position: relative;
+    padding: 0.5rem 1rem;
+  }
+  .nav-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    font-weight: bold;
+    color: var(--bistre);
+    font-size: 1.5rem;
+  }
+  .nav-links {
+    display: flex;
+    gap: 1rem;
+  }
+  .nav-link {
+    color: var(--bistre);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .nav-link:hover {
+    color: var(--flame);
+  }
+
+  /* Hero Section */
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--hero-bg);
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+  }
+  .hero-text h1 {
+    font-size: 4rem;
+    margin: 0;
+  }
+
+  /* Section Styling */
+  .section {
+    padding: 4rem 0;
+  }
+  .section-title {
+    color: var(--bistre);
+    margin-bottom: 2rem;
+  }
+
+  /* Our Values Section */
+  .values-section .card-title {
+    font-size: 1.25rem;
+    color: var(--flame);
+  }
+  .values-section .card-text {
+    color: var(--body-text);
+  }
+  .value-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+  }
+  .value-card:hover {
+    transform: translateY(-5px);
+  }
+
+  /* Footer Styles */
+  .footer {
+    background: var(--columbia-blue);
+    padding: 2rem 0;
+    text-align: center;
+  }
+  .footer a {
+    color: var(--flame);
+    text-decoration: none;
+    margin: 0 5px;
+  }
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  .social-icons a {
+    margin: 0 10px;
+    font-size: 1.5rem;
+  }
+
+  /* Cards and Buttons */
+  .card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  .btn-primary {
+    background-color: var(--flame);
+    border-color: var(--flame);
+  }
+  .btn-primary:hover {
+    background-color: var(--bistre);
+    border-color: var(--bistre);
+  }
+  .btn-success {
+    background-color: var(--cal-poly-green);
+    border-color: var(--cal-poly-green);
+  }
+  .btn-success:hover {
+    background-color: var(--bistre);
+    border-color: var(--bistre);
+  }
+
+  /* Chat Page Styles */
+  .chat-wrapper {
+    display: flex;
+    margin-top: 75px;
+    height: calc(100vh - 80px);
+  }
+  .chat-sidebar {
+    width: 250px;
+    background-color: var(--columbia-blue);
+    padding: 1rem;
+    border-right: 2px solid var(--flame);
+  }
+  .chat-sidebar h4 {
+    color: var(--bistre);
     margin-bottom: 1rem;
   }
-  .detail-card aside ul li {
-    margin-bottom: 0.5rem;
-    font-size: 0.95rem;
+  .channel-list {
+    list-style: none;
+    padding: 0;
   }
-  .detail-card aside .badge {
-    background-color: var(--columbia-blue);
-    color: var(--bistre);
+  .channel {
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 5px;
     font-weight: bold;
-    margin-right: 0.5rem;
-    margin-bottom: 0.5rem;
+    color: var(--bistre);
   }
-  .detail-card aside .badge:hover {
+  .channel:hover,
+  .channel.active {
     background-color: var(--flame);
     color: white;
   }
-  
-  /* Section Headings */
-  .detail-card h3 {
-    font-family: 'Candal', sans-serif;
-    color: var(--bistre);
-    margin-top: 1.5rem;
+  .chat-main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 1rem;
+  }
+  .chat-header {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.5rem;
     margin-bottom: 1rem;
-    border-bottom: 2px solid var(--columbia-blue);
-    display: inline-block;
-    padding-bottom: 0.25rem;
   }
-  
-  /* Description – preserve line breaks */
-  .detail-card p {
-    white-space: pre-line;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-  }
-  
-  /* Ordered Steps */
-  .detail-card ol {
-    padding-left: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-  .detail-card ol li {
-    margin-bottom: 0.75rem;
-    line-height: 1.5;
-  }
-  
-  /* Video Embed */
-  .detail-card .ratio {
-    margin-top: 1rem;
+  .chat-box {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 1rem;
     border: 1px solid #ddd;
-    border-radius: 8px;
+    background-color: #f9f9f9;
+    margin-bottom: 1rem;
+  }
+  .chat-message {
+    margin-bottom: 1rem;
+  }
+  .chat-input {
+    display: flex;
+    gap: 0.5rem;
+  }
+  .chat-input input {
+    flex-grow: 1;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .chat-input button {
+    background-color: var(--flame);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .chat-input button:hover {
+    background-color: var(--bistre);
+  }
+
+  /* Aspect Ratio Box for Exercise Images */
+  .aspect-ratio-box {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4 / 3;
     overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  .aspect-ratio-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Section Titles */
+  .title {
+    color: var(--bistre);
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .sub-title {
+    color: var(--cal-poly-green);
+    font-size: 1.25rem;
+  }
+  .sub-title span {
+    color: var(--flame);
+  }
+
+  /* Staff Grid */
+  .staff-wrapper {
+    margin-bottom: 2rem;
+  }
+  .staff {
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background: #fff;
+  }
+  .staff-image {
+    position: relative;
+    aspect-ratio: 1 / 1; /* Square aspect ratio, or use e.g. 4 / 3 for landscape */
+    overflow: hidden;
+    border-radius: 8px; /* Optional: keep this for rounded corners */
+  }
+  .staff-image img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;  /* This ensures the image fills the box while preserving aspect ratio */
+    display: block;
   }
   
-  /* Small tweaks for very small screens */
-  @media (max-width: 576px) {
-    .detail-card .row {
-      --bs-gutter-x: 1rem;
-    }
-    .detail-card h3 {
-      font-size: 1.25rem;
-    }
+  .staff-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(93, 55, 42, 0.85);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
   }
-
-/* Mobile-first responsiveness */
-@media (max-width: 1250px) {
-  .staff-overlay p {
-    font-size: 14px; /* Reduce the font size on mobile */
-    line-height: 1.4; /* Adjust line height for better readability */
-    padding: 0 10px; /* Add some padding to avoid text touching the edges */
-    max-height: 150px; /* Limit height to avoid text overflow */
-    overflow-y: auto; /* Make the description scrollable if it overflows */
+  .staff-image:hover .staff-overlay {
+    opacity: 1;
   }
-
-  /* Adjust staff-info section to make sure it's visible */
   .staff-info {
-    padding: 10px; /* Add some space around text */
+    padding: 0.75rem;
+  }
+  .staff-info h2 {
+    color: var(--bistre);
+    margin-bottom: 0.25rem;
+  }
+  .staff-info span {
+    color: var(--cal-poly-green);
+    font-style: italic;
+  }
+  .staff-social {
+    margin-top: 0.75rem;
+  }
+  .staff-social li {
+    display: inline-block;
+    margin: 0 0.25rem;
+  }
+  .staff-social a {
+    color: #fff;
+    font-size: 1.25rem;
   }
 
-  /* Reduce the spacing around the container */
-  .container {
-    padding-left: 15px;
-    padding-right: 15px;
+  /* Vision Section */
+  .vision-section {
+    padding: 4rem 0;
   }
-}
+  .vision-text .section-title {
+    color: var(--bistre);
+    margin-bottom: 1rem;
+  }
+  .vision-text p {
+    color: var(--body-text);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+  }
+  .vision-image img {
+    max-width: 80%;
+    height: auto;
+  }
+
+  /* Mission Section*/
+  .mission-section {
+    padding: 4rem 0;
+  }
+
+  .mission-text .section-title {
+    color: var(--bistre);
+    margin-bottom: 1rem;
+  }
+
+  .mission-text p {
+    color: var(--body-text);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+  }
+
+  .mission-image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Preserve typed-in line breaks in Vision & Mission paragraphs */
+  .vision-text p,
+  .mission-text p {
+    white-space: pre-line; /* collapse extra spaces, but keep single line breaks */
+  }
+
+  .train-section .card-title {
+    color: var(--flame) !important;
+    }
+
+  /* ======================================================
+    Detail‑Page Styles
+    ====================================================== */
+    .detail-card {
+      margin-top: 2rem;
+    }
+    
+    /* Make the two‑column grid a bit tighter */
+    .detail-card .row {
+      --bs-gutter-x: 2rem;
+    }
+    
+    /* Sidebar Meta */
+    .detail-card aside h2 {
+      font-family: 'Candal', sans-serif;
+      color: var(--bistre);
+      margin-bottom: 0.75rem;
+    }
+    .detail-card aside img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    .detail-card aside ul {
+      padding: 0;
+      list-style: none;
+      margin-bottom: 1rem;
+    }
+    .detail-card aside ul li {
+      margin-bottom: 0.5rem;
+      font-size: 0.95rem;
+    }
+    .detail-card aside .badge {
+      background-color: var(--columbia-blue);
+      color: var(--bistre);
+      font-weight: bold;
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .detail-card aside .badge:hover {
+      background-color: var(--flame);
+      color: white;
+    }
+    
+    /* Section Headings */
+    .detail-card h3 {
+      font-family: 'Candal', sans-serif;
+      color: var(--bistre);
+      margin-top: 1.5rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid var(--columbia-blue);
+      display: inline-block;
+      padding-bottom: 0.25rem;
+    }
+    
+    /* Description – preserve line breaks */
+    .detail-card p {
+      white-space: pre-line;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+    
+    /* Ordered Steps */
+    .detail-card ol {
+      padding-left: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .detail-card ol li {
+      margin-bottom: 0.75rem;
+      line-height: 1.5;
+    }
+    
+    /* Video Embed */
+    .detail-card .ratio {
+      margin-top: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    
+    /* Small tweaks for very small screens */
+    @media (max-width: 576px) {
+      .detail-card .row {
+        --bs-gutter-x: 1rem;
+      }
+      .detail-card h3 {
+        font-size: 1.25rem;
+      }
+    }
+
+    /* Mobile-first responsiveness */
+    @media (max-width: 1250px) {
+      .staff-overlay p {
+        font-size: 14px; /* Reduce the font size on mobile */
+        line-height: 1.4; /* Adjust line height for better readability */
+        padding: 0 10px; /* Add some padding to avoid text touching the edges */
+        max-height: 150px; /* Limit height to avoid text overflow */
+        overflow-y: auto; /* Make the description scrollable if it overflows */
+      }
+
+      /* Adjust staff-info section to make sure it's visible */
+      .staff-info {
+        padding: 10px; /* Add some space around text */
+      }
+
+      /* Reduce the spacing around the container */
+      .container {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
 
 
